@@ -1,2 +1,0 @@
-Normal UI smoke started.
-PASS: 75 seconds; previous budgets/scenes/queue/cursor-release regression; meme manual button left screen and completed fake Photos pull/release, status/size fields present, seventh queue entry integrated. Windows cursor and real Photos adapters never constructed in smoke. GDI baseline=34 max=36 final=34; USER baseline=45 final=45. Real Photos tested separately via scoped native probe; clean Close exit.

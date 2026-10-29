@@ -1,0 +1,17 @@
+PASS: Publishing requires an explicit stage start
+PASS: Begin leaves actual unchanged
+PASS: version1 is an exact verified copy of actual
+PASS: Previous version1 survives in version2
+PASS: Repeated Begin cannot overwrite backup in an active stage
+PASS: Approval requires the correct stage ID
+PASS: Tampered version1 blocks publishing/approval
+PASS: Build 1 preserves version1
+PASS: Build 1 preserves unapproved version2
+PASS: Build 2 preserves version1
+PASS: Build 2 preserves unapproved version2
+PASS: Explicit Approve removes only version2
+PASS: Approval retains version1
+PASS: Approved stage requires new Begin before another publish
+PASS: Path traversal outside intended target is refused
+PASS: Junction paths are refused
+PASS: Next stage backs up the latest actual

@@ -1,2 +1,0 @@
-Normal UI smoke started.
-PASS: 75 seconds; existing scenes/fake capture/Escape; whole twenty-second watch, no frontal substitution, pause/hide freeze, fixed seated gaze, no cursor side effects; six-item queue preview; manual first/second repeat accepted, third disabled/refused, tail revalidated, background restart. WindowsCursorAdapter never constructed. GDI baseline=32 max=32 final=32; USER baseline=33 final=33. Physical input not asserted; clean Close exit.

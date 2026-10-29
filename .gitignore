@@ -4,4 +4,7 @@
 **/bin/
 *.user
 *.suo
-# Frames/memes, dist, work and test evidence are intentionally included.
+# actual/, backup/, devs/Frames, devs/work and test evidence are intentionally included.
+
+# Local release synchronization handle.
+devs/.release.lock

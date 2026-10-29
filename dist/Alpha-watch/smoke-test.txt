@@ -1,2 +1,0 @@
-Normal UI smoke started.
-PASS: 75 seconds; previous scenes and fake capture/Escape; watch manual button, approach/sit/gaze/blink/stand; watch pause/hide freeze, stationary seated gaze up/right, zero cursor writes/arming/releases during watch, background restart. Real WindowsCursorAdapter was never constructed in smoke. GDI baseline=31 max=31 final=31; USER baseline=30 final=30. Physical input not asserted; clean Close exit.

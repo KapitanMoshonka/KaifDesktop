@@ -1,1 +1,0 @@
-PASS: 22 assets; every frame duration boundary and loop; animation switch; invalid/malformed/missing settings, save/load/replace; required missing PNG and path traversal rejection; 20000 movement ticks with both directions, speed and negative coordinates; suspend cap; tiny area; return/clamp.

@@ -1,0 +1,7 @@
+PASS: 148 packaged sprite files match source SHA256.
+PASS: nine packaged memes match source SHA256 and decode.
+PASS: fixed meme-scales.json packaged unchanged.
+PASS: empty settings source emits MemeSourceDirectory=memes.
+PASS: test reports and test error logs stay under tests/.
+No UI/cursor tests run. Expected injected JSON/fake-open errors are in self-test-expected-errors.log.
+PASS: PowerShell syntax and running-EXE path guard (simulated process metadata).

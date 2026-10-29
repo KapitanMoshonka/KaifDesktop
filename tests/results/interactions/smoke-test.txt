@@ -1,2 +1,0 @@
-Normal UI smoke started.
-PASS: 75 seconds; roaming, taskbar/tray, no focus capture; all four manual scenarios completed, background restarted; sleep pause/hide freeze timeline, native hit-test distinguishes visible/transparent pixels; transparent click does not wake, silhouette WM_LBUTTONUP wakes, transparent style restored; no hooks. GDI baseline=31 max=31 final=31; USER baseline=28 final=28. Real mouse dispatch through other apps and physical taskbar clicks not asserted; control Close tested for exit.

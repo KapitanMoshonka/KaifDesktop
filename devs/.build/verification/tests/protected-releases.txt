@@ -1,0 +1,3 @@
+PASS: actual and backup/version1 full file SHA256 fingerprints unchanged.
+PASS: default build refuses publishing without explicit Begin.
+PASS: clean-settings packaging and self-test with TEMP working directory.
