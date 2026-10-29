@@ -1,0 +1,267 @@
+[
+  {
+    "file": "chase-tail.gif",
+    "frames": 8,
+    "size": [
+      192,
+      208
+    ],
+    "positive_durations": true
+  },
+  {
+    "file": "dragged.gif",
+    "frames": 4,
+    "size": [
+      192,
+      208
+    ],
+    "positive_durations": true
+  },
+  {
+    "file": "ear-scratch-enter.gif",
+    "frames": 3,
+    "size": [
+      192,
+      208
+    ],
+    "positive_durations": true
+  },
+  {
+    "file": "ear-scratch-exit.gif",
+    "frames": 3,
+    "size": [
+      192,
+      208
+    ],
+    "positive_durations": true
+  },
+  {
+    "file": "ear-scratch-loop.gif",
+    "frames": 4,
+    "size": [
+      192,
+      208
+    ],
+    "positive_durations": true
+  },
+  {
+    "file": "grab-left.gif",
+    "frames": 4,
+    "size": [
+      192,
+      208
+    ],
+    "positive_durations": true
+  },
+  {
+    "file": "grab-right.gif",
+    "frames": 4,
+    "size": [
+      192,
+      208
+    ],
+    "positive_durations": true
+  },
+  {
+    "file": "lie-down.gif",
+    "frames": 6,
+    "size": [
+      192,
+      208
+    ],
+    "positive_durations": true
+  },
+  {
+    "file": "petting.gif",
+    "frames": 4,
+    "size": [
+      192,
+      208
+    ],
+    "positive_durations": true
+  },
+  {
+    "file": "pull-left.gif",
+    "frames": 8,
+    "size": [
+      192,
+      208
+    ],
+    "positive_durations": true
+  },
+  {
+    "file": "pull-right.gif",
+    "frames": 8,
+    "size": [
+      192,
+      208
+    ],
+    "positive_durations": true
+  },
+  {
+    "file": "release-left.gif",
+    "frames": 4,
+    "size": [
+      192,
+      208
+    ],
+    "positive_durations": true
+  },
+  {
+    "file": "release-right.gif",
+    "frames": 4,
+    "size": [
+      192,
+      208
+    ],
+    "positive_durations": true
+  },
+  {
+    "file": "sequence-carry-left.gif",
+    "frames": 24,
+    "size": [
+      192,
+      208
+    ],
+    "positive_durations": true
+  },
+  {
+    "file": "sequence-carry-right.gif",
+    "frames": 24,
+    "size": [
+      192,
+      208
+    ],
+    "positive_durations": true
+  },
+  {
+    "file": "sequence-scratch.gif",
+    "frames": 23,
+    "size": [
+      192,
+      208
+    ],
+    "positive_durations": true
+  },
+  {
+    "file": "sequence-watch.gif",
+    "frames": 16,
+    "size": [
+      192,
+      208
+    ],
+    "positive_durations": true
+  },
+  {
+    "file": "sit-down.gif",
+    "frames": 6,
+    "size": [
+      192,
+      208
+    ],
+    "positive_durations": true
+  },
+  {
+    "file": "sleep-cycle.gif",
+    "frames": 21,
+    "size": [
+      192,
+      208
+    ],
+    "positive_durations": true
+  },
+  {
+    "file": "sleep.gif",
+    "frames": 6,
+    "size": [
+      192,
+      208
+    ],
+    "positive_durations": true
+  },
+  {
+    "file": "stand-up.gif",
+    "frames": 6,
+    "size": [
+      192,
+      208
+    ],
+    "positive_durations": true
+  },
+  {
+    "file": "stretch-yawn.gif",
+    "frames": 8,
+    "size": [
+      192,
+      208
+    ],
+    "positive_durations": true
+  },
+  {
+    "file": "wake-up.gif",
+    "frames": 6,
+    "size": [
+      192,
+      208
+    ],
+    "positive_durations": true
+  },
+  {
+    "file": "watch-idle.gif",
+    "frames": 6,
+    "size": [
+      192,
+      208
+    ],
+    "positive_durations": true
+  },
+  {
+    "file": "watch-look.gif",
+    "frames": 8,
+    "size": [
+      192,
+      208
+    ],
+    "positive_durations": true
+  },
+  {
+    "file": "walk-right.gif",
+    "frames": 8,
+    "size": [
+      192,
+      208
+    ],
+    "positive_durations": true,
+    "duration_ms": [
+      180,
+      180,
+      180,
+      180,
+      180,
+      180,
+      180,
+      180
+    ],
+    "revision": "walk-v2-2026-10-18"
+  },
+  {
+    "file": "walk-left.gif",
+    "frames": 8,
+    "size": [
+      192,
+      208
+    ],
+    "positive_durations": true,
+    "duration_ms": [
+      180,
+      180,
+      180,
+      180,
+      180,
+      180,
+      180,
+      180
+    ],
+    "revision": "walk-v2-2026-10-18"
+  }
+]

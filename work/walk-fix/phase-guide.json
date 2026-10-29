@@ -1,0 +1,242 @@
+[
+  {
+    "far hind": {
+      "paw": [
+        40.0,
+        191.4
+      ],
+      "swing": true
+    },
+    "far fore": {
+      "paw": [
+        109.0,
+        202
+      ],
+      "swing": false
+    },
+    "near hind": {
+      "paw": [
+        58.3,
+        202
+      ],
+      "swing": false
+    },
+    "near fore": {
+      "paw": [
+        140.7,
+        202
+      ],
+      "swing": false
+    }
+  },
+  {
+    "far hind": {
+      "paw": [
+        60.0,
+        191.4
+      ],
+      "swing": true
+    },
+    "far fore": {
+      "paw": [
+        102.3,
+        202
+      ],
+      "swing": false
+    },
+    "near hind": {
+      "paw": [
+        51.7,
+        202
+      ],
+      "swing": false
+    },
+    "near fore": {
+      "paw": [
+        134.0,
+        202
+      ],
+      "swing": false
+    }
+  },
+  {
+    "far hind": {
+      "paw": [
+        66.7,
+        202
+      ],
+      "swing": false
+    },
+    "far fore": {
+      "paw": [
+        109.0,
+        191.4
+      ],
+      "swing": true
+    },
+    "near hind": {
+      "paw": [
+        45.0,
+        202
+      ],
+      "swing": false
+    },
+    "near fore": {
+      "paw": [
+        127.3,
+        202
+      ],
+      "swing": false
+    }
+  },
+  {
+    "far hind": {
+      "paw": [
+        60.0,
+        202
+      ],
+      "swing": false
+    },
+    "far fore": {
+      "paw": [
+        129.0,
+        191.4
+      ],
+      "swing": true
+    },
+    "near hind": {
+      "paw": [
+        38.3,
+        202
+      ],
+      "swing": false
+    },
+    "near fore": {
+      "paw": [
+        120.7,
+        202
+      ],
+      "swing": false
+    }
+  },
+  {
+    "far hind": {
+      "paw": [
+        53.3,
+        202
+      ],
+      "swing": false
+    },
+    "far fore": {
+      "paw": [
+        135.7,
+        202
+      ],
+      "swing": false
+    },
+    "near hind": {
+      "paw": [
+        45.0,
+        191.4
+      ],
+      "swing": true
+    },
+    "near fore": {
+      "paw": [
+        114.0,
+        202
+      ],
+      "swing": false
+    }
+  },
+  {
+    "far hind": {
+      "paw": [
+        46.7,
+        202
+      ],
+      "swing": false
+    },
+    "far fore": {
+      "paw": [
+        129.0,
+        202
+      ],
+      "swing": false
+    },
+    "near hind": {
+      "paw": [
+        65.0,
+        191.4
+      ],
+      "swing": true
+    },
+    "near fore": {
+      "paw": [
+        107.3,
+        202
+      ],
+      "swing": false
+    }
+  },
+  {
+    "far hind": {
+      "paw": [
+        40.0,
+        202
+      ],
+      "swing": false
+    },
+    "far fore": {
+      "paw": [
+        122.3,
+        202
+      ],
+      "swing": false
+    },
+    "near hind": {
+      "paw": [
+        71.7,
+        202
+      ],
+      "swing": false
+    },
+    "near fore": {
+      "paw": [
+        114.0,
+        191.4
+      ],
+      "swing": true
+    }
+  },
+  {
+    "far hind": {
+      "paw": [
+        33.3,
+        202
+      ],
+      "swing": false
+    },
+    "far fore": {
+      "paw": [
+        115.7,
+        202
+      ],
+      "swing": false
+    },
+    "near hind": {
+      "paw": [
+        65.0,
+        202
+      ],
+      "swing": false
+    },
+    "near fore": {
+      "paw": [
+        134.0,
+        191.4
+      ],
+      "swing": true
+    }
+  }
+]

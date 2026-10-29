@@ -1,0 +1,19 @@
+вахуи.jpg scale=0,3 client={Width=216, Height=215} side=left
+вахуи.jpg scale=0,3 client={Width=216, Height=215} side=right
+дачтоты.jpg scale=0,3 client={Width=220, Height=228} side=left
+дачтоты.jpg scale=0,3 client={Width=220, Height=228} side=right
+забыл.jpg scale=0,4 client={Width=300, Height=325} side=left
+забыл.jpg scale=0,4 client={Width=300, Height=325} side=right
+зубнаяпаста.jpg scale=0,5 client={Width=360, Height=330} side=left
+зубнаяпаста.jpg scale=0,5 client={Width=360, Height=330} side=right
+надувательство.jpg scale=1 client={Width=385, Height=385} side=left
+надувательство.jpg scale=1 client={Width=385, Height=385} side=right
+охчорткакжеякрут.jpg scale=0,75 client={Width=551, Height=413} side=left
+охчорткакжеякрут.jpg scale=0,75 client={Width=551, Height=413} side=right
+серьезность.jpg scale=0,4 client={Width=294, Height=286} side=left
+серьезность.jpg scale=0,4 client={Width=294, Height=286} side=right
+слюнявые коты.jpg scale=0,3 client={Width=204, Height=183} side=left
+слюнявые коты.jpg scale=0,3 client={Width=204, Height=183} side=right
+сметанник.jpg scale=1 client={Width=528, Height=940} side=left
+сметанник.jpg scale=1 client={Width=528, Height=940} side=right
+PASS: 18 real deliveries, fixed client scales, source files unlocked, no activation, release/manual resize, cancel in all phases, close during pull, exit disposal. GDI 17->17; USER 9->10

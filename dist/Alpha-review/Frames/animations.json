@@ -1,0 +1,81 @@
+{
+  "schema_version": 2,
+  "name": "Кайфик",
+  "frame_width": 192,
+  "frame_height": 208,
+  "format": "PNG RGBA",
+  "anchors": {
+    "cell_center_x": 96,
+    "ground_y": 202,
+    "dragged": "Position by body center while held; lower paws are free to sway.",
+    "mouth": "Per-frame mouth_anchors_px: [x,y] in the 192x208 PNG, origin top-left. Mirror x=191-x. Runtime must apply sprite scale and screen position."
+  },
+  "animations": {
+    "idle": {
+      "frames": [
+        "idle/00.png",
+        "idle/01.png",
+        "idle/02.png",
+        "idle/03.png",
+        "idle/04.png",
+        "idle/05.png"
+      ],
+      "durations_ms": [
+        280,
+        110,
+        110,
+        140,
+        140,
+        320
+      ],
+      "loop": true
+    },
+    "walk-left": {
+      "frames": [
+        "walk-left/00.png",
+        "walk-left/01.png",
+        "walk-left/02.png",
+        "walk-left/03.png",
+        "walk-left/04.png",
+        "walk-left/05.png",
+        "walk-left/06.png",
+        "walk-left/07.png"
+      ],
+      "durations_ms": [
+        180,
+        180,
+        180,
+        180,
+        180,
+        180,
+        180,
+        180
+      ],
+      "loop": true
+    },
+    "walk-right": {
+      "frames": [
+        "walk-right/00.png",
+        "walk-right/01.png",
+        "walk-right/02.png",
+        "walk-right/03.png",
+        "walk-right/04.png",
+        "walk-right/05.png",
+        "walk-right/06.png",
+        "walk-right/07.png"
+      ],
+      "durations_ms": [
+        180,
+        180,
+        180,
+        180,
+        180,
+        180,
+        180,
+        180
+      ],
+      "loop": true
+    }
+  },
+  "total_frame_count": 22
+}

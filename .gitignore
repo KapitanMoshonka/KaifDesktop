@@ -1,0 +1,7 @@
+# Local IDE caches and intermediate compilation files only.
+.vs/
+**/obj/
+**/bin/
+*.user
+*.suo
+# Frames/memes, dist, work and test evidence are intentionally included.

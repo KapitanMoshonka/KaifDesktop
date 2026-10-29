@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "errors": [],
+  "animation_count": 30,
+  "animation_frames": 175,
+  "standing_look_frames": 16,
+  "seated_look_frames": 8,
+  "total_frame_count": 199,
+  "checks": [
+    "All manifest references exist inside Frames",
+    "RGBA 192x208 and alpha range 0..255",
+    "Opaque canvas margins",
+    "Positive frame durations and valid next references",
+    "Walk frames mirror exactly with temporal order preserved",
+    "Walk endpoint is not duplicated",
+    "SHA256 comparison: other animation PNG unchanged"
+  ],
+  "limitations": [
+    "Automated checks do not establish natural gait",
+    "Visual review of contact sheets is not runtime acceptance",
+    "New gait not run in desktop application"
+  ],
+  "walk_revision": "walk-v2-2026-10-18",
+  "changed_png": [
+    "walk-left\\00.png",
+    "walk-left\\01.png",
+    "walk-left\\02.png",
+    "walk-left\\03.png",
+    "walk-left\\04.png",
+    "walk-left\\05.png",
+    "walk-left\\06.png",
+    "walk-left\\07.png",
+    "walk-right\\00.png",
+    "walk-right\\01.png",
+    "walk-right\\02.png",
+    "walk-right\\03.png",
+    "walk-right\\04.png",
+    "walk-right\\05.png",
+    "walk-right\\06.png",
+    "walk-right\\07.png"
+  ]
+}

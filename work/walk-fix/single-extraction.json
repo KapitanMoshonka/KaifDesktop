@@ -1,0 +1,114 @@
+[
+  {
+    "phase": 0,
+    "source": "C:\\Users\\SirxM\\.codex\\generated_images\\01a14e06-df72-7603-859d-e8fb86255c4f\\exec-68eeaacd-1fa2-4212-b422-11edc52dab41.png",
+    "registration_scale_xy": [
+      0.1407269338303821,
+      0.16549295774647887
+    ],
+    "bounds": [
+      13,
+      61,
+      174,
+      202
+    ]
+  },
+  {
+    "phase": 1,
+    "source": "C:\\Users\\SirxM\\.codex\\generated_images\\01a14e06-df72-7603-859d-e8fb86255c4f\\exec-4e1240b4-dc7a-40bd-8ee4-d8aff168385a.png",
+    "registration_scale_xy": [
+      0.17436489607390301,
+      0.18264248704663213
+    ],
+    "bounds": [
+      17,
+      61,
+      173,
+      202
+    ]
+  },
+  {
+    "phase": 2,
+    "source": "C:\\Users\\SirxM\\.codex\\generated_images\\01a14e06-df72-7603-859d-e8fb86255c4f\\exec-fa0256d6-63b6-4a99-81b9-c33b07d15b25.png",
+    "registration_scale_xy": [
+      0.1648471615720524,
+      0.1719512195121951
+    ],
+    "bounds": [
+      7,
+      61,
+      173,
+      202
+    ]
+  },
+  {
+    "phase": 3,
+    "source": "C:\\Users\\SirxM\\.codex\\generated_images\\01a14e06-df72-7603-859d-e8fb86255c4f\\exec-a8fcb073-d96f-4fdb-83a7-06db7435e076.png",
+    "registration_scale_xy": [
+      0.1712018140589569,
+      0.17893401015228427
+    ],
+    "bounds": [
+      6,
+      61,
+      173,
+      202
+    ]
+  },
+  {
+    "phase": 4,
+    "source": "C:\\Users\\SirxM\\.codex\\generated_images\\01a14e06-df72-7603-859d-e8fb86255c4f\\exec-07902fef-bfeb-4155-a066-df7df9ca9a1f.png",
+    "registration_scale_xy": [
+      0.17578579743888242,
+      0.18479685452162517
+    ],
+    "bounds": [
+      10,
+      61,
+      173,
+      202
+    ]
+  },
+  {
+    "phase": 5,
+    "source": "C:\\Users\\SirxM\\.codex\\generated_images\\01a14e06-df72-7603-859d-e8fb86255c4f\\exec-b1ec599a-d51d-49f5-b56c-63fa7df4c276.png",
+    "registration_scale_xy": [
+      0.16377440347071584,
+      0.16510538641686182
+    ],
+    "bounds": [
+      10,
+      61,
+      173,
+      202
+    ]
+  },
+  {
+    "phase": 6,
+    "source": "C:\\Users\\SirxM\\.codex\\generated_images\\01a14e06-df72-7603-859d-e8fb86255c4f\\exec-9784ded5-6bfa-48a1-b047-61e00e994aff.png",
+    "registration_scale_xy": [
+      0.17004504504504506,
+      0.18007662835249041
+    ],
+    "bounds": [
+      13,
+      61,
+      173,
+      202
+    ]
+  },
+  {
+    "phase": 7,
+    "source": "C:\\Users\\SirxM\\.codex\\generated_images\\01a14e06-df72-7603-859d-e8fb86255c4f\\exec-ee7565c3-b703-47c7-8e2b-a7c2d6a82ddb.png",
+    "registration_scale_xy": [
+      0.14876847290640394,
+      0.16169724770642202
+    ],
+    "bounds": [
+      4,
+      61,
+      173,
+      202
+    ]
+  }
+]

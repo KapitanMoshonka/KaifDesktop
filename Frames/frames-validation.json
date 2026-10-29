@@ -1,0 +1,1835 @@
+{
+  "passed": true,
+  "errors": [],
+  "animation_count": 30,
+  "animation_frames": 175,
+  "standing_look_frames": 16,
+  "seated_look_frames": 8,
+  "total_frame_count": 199,
+  "checks": [
+    "All manifest references exist inside Frames",
+    "RGBA 192x208 and alpha range 0..255",
+    "Opaque canvas margins",
+    "Positive frame durations and valid next references",
+    "Walk frames mirror exactly with temporal order preserved",
+    "Walk endpoint is not duplicated",
+    "SHA256 comparison: other animation PNG unchanged"
+  ],
+  "limitations": [
+    "Automated checks do not establish natural gait",
+    "Visual review of contact sheets is not runtime acceptance",
+    "New gait not run in desktop application"
+  ],
+  "walk_revision": "walk-v2-2026-10-18",
+  "changed_png": [
+    "walk-left\\00.png",
+    "walk-left\\01.png",
+    "walk-left\\02.png",
+    "walk-left\\03.png",
+    "walk-left\\04.png",
+    "walk-left\\05.png",
+    "walk-left\\06.png",
+    "walk-left\\07.png",
+    "walk-right\\00.png",
+    "walk-right\\01.png",
+    "walk-right\\02.png",
+    "walk-right\\03.png",
+    "walk-right\\04.png",
+    "walk-right\\05.png",
+    "walk-right\\06.png",
+    "walk-right\\07.png"
+  ],
+  "bounds": [
+    {
+      "file": "idle/00.png",
+      "opaque_bounds": [
+        46,
+        29,
+        145,
+        201
+      ]
+    },
+    {
+      "file": "idle/01.png",
+      "opaque_bounds": [
+        47,
+        30,
+        145,
+        201
+      ]
+    },
+    {
+      "file": "idle/02.png",
+      "opaque_bounds": [
+        46,
+        30,
+        144,
+        201
+      ]
+    },
+    {
+      "file": "idle/03.png",
+      "opaque_bounds": [
+        47,
+        30,
+        144,
+        201
+      ]
+    },
+    {
+      "file": "idle/04.png",
+      "opaque_bounds": [
+        47,
+        30,
+        144,
+        201
+      ]
+    },
+    {
+      "file": "idle/05.png",
+      "opaque_bounds": [
+        47,
+        30,
+        144,
+        201
+      ]
+    },
+    {
+      "file": "running-right/00.png",
+      "opaque_bounds": [
+        30,
+        69,
+        162,
+        197
+      ]
+    },
+    {
+      "file": "running-right/01.png",
+      "opaque_bounds": [
+        17,
+        70,
+        175,
+        195
+      ]
+    },
+    {
+      "file": "running-right/02.png",
+      "opaque_bounds": [
+        9,
+        65,
+        182,
+        191
+      ]
+    },
+    {
+      "file": "running-right/03.png",
+      "opaque_bounds": [
+        12,
+        63,
+        179,
+        176
+      ]
+    },
+    {
+      "file": "running-right/04.png",
+      "opaque_bounds": [
+        28,
+        74,
+        164,
+        202
+      ]
+    },
+    {
+      "file": "running-right/05.png",
+      "opaque_bounds": [
+        18,
+        67,
+        173,
+        202
+      ]
+    },
+    {
+      "file": "running-right/06.png",
+      "opaque_bounds": [
+        9,
+        70,
+        183,
+        199
+      ]
+    },
+    {
+      "file": "running-right/07.png",
+      "opaque_bounds": [
+        25,
+        68,
+        166,
+        202
+      ]
+    },
+    {
+      "file": "running-left/00.png",
+      "opaque_bounds": [
+        30,
+        69,
+        162,
+        197
+      ]
+    },
+    {
+      "file": "running-left/01.png",
+      "opaque_bounds": [
+        17,
+        70,
+        175,
+        195
+      ]
+    },
+    {
+      "file": "running-left/02.png",
+      "opaque_bounds": [
+        9,
+        65,
+        182,
+        191
+      ]
+    },
+    {
+      "file": "running-left/03.png",
+      "opaque_bounds": [
+        13,
+        63,
+        180,
+        176
+      ]
+    },
+    {
+      "file": "running-left/04.png",
+      "opaque_bounds": [
+        28,
+        74,
+        163,
+        202
+      ]
+    },
+    {
+      "file": "running-left/05.png",
+      "opaque_bounds": [
+        19,
+        67,
+        174,
+        202
+      ]
+    },
+    {
+      "file": "running-left/06.png",
+      "opaque_bounds": [
+        9,
+        70,
+        183,
+        199
+      ]
+    },
+    {
+      "file": "running-left/07.png",
+      "opaque_bounds": [
+        25,
+        68,
+        166,
+        202
+      ]
+    },
+    {
+      "file": "waving/00.png",
+      "opaque_bounds": [
+        39,
+        29,
+        152,
+        201
+      ]
+    },
+    {
+      "file": "waving/01.png",
+      "opaque_bounds": [
+        40,
+        30,
+        151,
+        201
+      ]
+    },
+    {
+      "file": "waving/02.png",
+      "opaque_bounds": [
+        32,
+        29,
+        159,
+        201
+      ]
+    },
+    {
+      "file": "waving/03.png",
+      "opaque_bounds": [
+        42,
+        30,
+        148,
+        201
+      ]
+    },
+    {
+      "file": "jumping/00.png",
+      "opaque_bounds": [
+        45,
+        34,
+        146,
+        202
+      ]
+    },
+    {
+      "file": "jumping/01.png",
+      "opaque_bounds": [
+        43,
+        23,
+        148,
+        195
+      ]
+    },
+    {
+      "file": "jumping/02.png",
+      "opaque_bounds": [
+        43,
+        6,
+        148,
+        177
+      ]
+    },
+    {
+      "file": "jumping/03.png",
+      "opaque_bounds": [
+        42,
+        31,
+        149,
+        197
+      ]
+    },
+    {
+      "file": "jumping/04.png",
+      "opaque_bounds": [
+        44,
+        32,
+        147,
+        201
+      ]
+    },
+    {
+      "file": "failed/00.png",
+      "opaque_bounds": [
+        43,
+        30,
+        146,
+        201
+      ]
+    },
+    {
+      "file": "failed/01.png",
+      "opaque_bounds": [
+        44,
+        40,
+        146,
+        201
+      ]
+    },
+    {
+      "file": "failed/02.png",
+      "opaque_bounds": [
+        44,
+        47,
+        146,
+        201
+      ]
+    },
+    {
+      "file": "failed/03.png",
+      "opaque_bounds": [
+        44,
+        53,
+        146,
+        201
+      ]
+    },
+    {
+      "file": "failed/04.png",
+      "opaque_bounds": [
+        44,
+        53,
+        146,
+        201
+      ]
+    },
+    {
+      "file": "failed/05.png",
+      "opaque_bounds": [
+        43,
+        52,
+        147,
+        201
+      ]
+    },
+    {
+      "file": "failed/06.png",
+      "opaque_bounds": [
+        44,
+        46,
+        145,
+        201
+      ]
+    },
+    {
+      "file": "failed/07.png",
+      "opaque_bounds": [
+        44,
+        32,
+        145,
+        201
+      ]
+    },
+    {
+      "file": "waiting/00.png",
+      "opaque_bounds": [
+        50,
+        30,
+        141,
+        201
+      ]
+    },
+    {
+      "file": "waiting/01.png",
+      "opaque_bounds": [
+        49,
+        34,
+        141,
+        201
+      ]
+    },
+    {
+      "file": "waiting/02.png",
+      "opaque_bounds": [
+        50,
+        35,
+        141,
+        201
+      ]
+    },
+    {
+      "file": "waiting/03.png",
+      "opaque_bounds": [
+        49,
+        35,
+        142,
+        202
+      ]
+    },
+    {
+      "file": "waiting/04.png",
+      "opaque_bounds": [
+        48,
+        34,
+        143,
+        202
+      ]
+    },
+    {
+      "file": "waiting/05.png",
+      "opaque_bounds": [
+        53,
+        32,
+        138,
+        201
+      ]
+    },
+    {
+      "file": "running/00.png",
+      "opaque_bounds": [
+        45,
+        57,
+        147,
+        202
+      ]
+    },
+    {
+      "file": "running/01.png",
+      "opaque_bounds": [
+        46,
+        57,
+        145,
+        202
+      ]
+    },
+    {
+      "file": "running/02.png",
+      "opaque_bounds": [
+        47,
+        56,
+        144,
+        202
+      ]
+    },
+    {
+      "file": "running/03.png",
+      "opaque_bounds": [
+        43,
+        67,
+        148,
+        202
+      ]
+    },
+    {
+      "file": "running/04.png",
+      "opaque_bounds": [
+        45,
+        56,
+        146,
+        202
+      ]
+    },
+    {
+      "file": "running/05.png",
+      "opaque_bounds": [
+        47,
+        57,
+        144,
+        202
+      ]
+    },
+    {
+      "file": "review/00.png",
+      "opaque_bounds": [
+        46,
+        30,
+        145,
+        201
+      ]
+    },
+    {
+      "file": "review/01.png",
+      "opaque_bounds": [
+        43,
+        56,
+        148,
+        201
+      ]
+    },
+    {
+      "file": "review/02.png",
+      "opaque_bounds": [
+        44,
+        38,
+        147,
+        201
+      ]
+    },
+    {
+      "file": "review/03.png",
+      "opaque_bounds": [
+        45,
+        55,
+        145,
+        201
+      ]
+    },
+    {
+      "file": "review/04.png",
+      "opaque_bounds": [
+        44,
+        38,
+        146,
+        201
+      ]
+    },
+    {
+      "file": "review/05.png",
+      "opaque_bounds": [
+        46,
+        30,
+        145,
+        201
+      ]
+    },
+    {
+      "file": "walk-right/00.png",
+      "opaque_bounds": [
+        13,
+        61,
+        174,
+        202
+      ]
+    },
+    {
+      "file": "walk-right/01.png",
+      "opaque_bounds": [
+        17,
+        61,
+        173,
+        202
+      ]
+    },
+    {
+      "file": "walk-right/02.png",
+      "opaque_bounds": [
+        7,
+        61,
+        173,
+        202
+      ]
+    },
+    {
+      "file": "walk-right/03.png",
+      "opaque_bounds": [
+        6,
+        61,
+        173,
+        202
+      ]
+    },
+    {
+      "file": "walk-right/04.png",
+      "opaque_bounds": [
+        10,
+        61,
+        173,
+        202
+      ]
+    },
+    {
+      "file": "walk-right/05.png",
+      "opaque_bounds": [
+        10,
+        61,
+        173,
+        202
+      ]
+    },
+    {
+      "file": "walk-right/06.png",
+      "opaque_bounds": [
+        13,
+        61,
+        173,
+        202
+      ]
+    },
+    {
+      "file": "walk-right/07.png",
+      "opaque_bounds": [
+        4,
+        61,
+        173,
+        202
+      ]
+    },
+    {
+      "file": "walk-left/00.png",
+      "opaque_bounds": [
+        18,
+        61,
+        179,
+        202
+      ]
+    },
+    {
+      "file": "walk-left/01.png",
+      "opaque_bounds": [
+        19,
+        61,
+        175,
+        202
+      ]
+    },
+    {
+      "file": "walk-left/02.png",
+      "opaque_bounds": [
+        19,
+        61,
+        185,
+        202
+      ]
+    },
+    {
+      "file": "walk-left/03.png",
+      "opaque_bounds": [
+        19,
+        61,
+        186,
+        202
+      ]
+    },
+    {
+      "file": "walk-left/04.png",
+      "opaque_bounds": [
+        19,
+        61,
+        182,
+        202
+      ]
+    },
+    {
+      "file": "walk-left/05.png",
+      "opaque_bounds": [
+        19,
+        61,
+        182,
+        202
+      ]
+    },
+    {
+      "file": "walk-left/06.png",
+      "opaque_bounds": [
+        19,
+        61,
+        179,
+        202
+      ]
+    },
+    {
+      "file": "walk-left/07.png",
+      "opaque_bounds": [
+        19,
+        61,
+        188,
+        202
+      ]
+    },
+    {
+      "file": "lie-down/00.png",
+      "opaque_bounds": [
+        46,
+        29,
+        145,
+        201
+      ]
+    },
+    {
+      "file": "lie-down/01.png",
+      "opaque_bounds": [
+        40,
+        45,
+        152,
+        202
+      ]
+    },
+    {
+      "file": "lie-down/02.png",
+      "opaque_bounds": [
+        38,
+        78,
+        153,
+        202
+      ]
+    },
+    {
+      "file": "lie-down/03.png",
+      "opaque_bounds": [
+        39,
+        98,
+        153,
+        202
+      ]
+    },
+    {
+      "file": "lie-down/04.png",
+      "opaque_bounds": [
+        38,
+        131,
+        154,
+        202
+      ]
+    },
+    {
+      "file": "lie-down/05.png",
+      "opaque_bounds": [
+        39,
+        131,
+        153,
+        202
+      ]
+    },
+    {
+      "file": "sleep/00.png",
+      "opaque_bounds": [
+        39,
+        131,
+        153,
+        202
+      ]
+    },
+    {
+      "file": "sleep/01.png",
+      "opaque_bounds": [
+        39,
+        134,
+        154,
+        202
+      ]
+    },
+    {
+      "file": "sleep/02.png",
+      "opaque_bounds": [
+        38,
+        131,
+        154,
+        202
+      ]
+    },
+    {
+      "file": "sleep/03.png",
+      "opaque_bounds": [
+        37,
+        134,
+        154,
+        202
+      ]
+    },
+    {
+      "file": "sleep/04.png",
+      "opaque_bounds": [
+        37,
+        134,
+        154,
+        202
+      ]
+    },
+    {
+      "file": "sleep/05.png",
+      "opaque_bounds": [
+        39,
+        131,
+        153,
+        202
+      ]
+    },
+    {
+      "file": "wake-up/00.png",
+      "opaque_bounds": [
+        39,
+        131,
+        153,
+        202
+      ]
+    },
+    {
+      "file": "wake-up/01.png",
+      "opaque_bounds": [
+        34,
+        128,
+        158,
+        202
+      ]
+    },
+    {
+      "file": "wake-up/02.png",
+      "opaque_bounds": [
+        39,
+        106,
+        153,
+        202
+      ]
+    },
+    {
+      "file": "wake-up/03.png",
+      "opaque_bounds": [
+        31,
+        81,
+        160,
+        202
+      ]
+    },
+    {
+      "file": "wake-up/04.png",
+      "opaque_bounds": [
+        34,
+        55,
+        157,
+        202
+      ]
+    },
+    {
+      "file": "wake-up/05.png",
+      "opaque_bounds": [
+        46,
+        29,
+        145,
+        201
+      ]
+    },
+    {
+      "file": "dragged/00.png",
+      "opaque_bounds": [
+        46,
+        27,
+        146,
+        197
+      ]
+    },
+    {
+      "file": "dragged/01.png",
+      "opaque_bounds": [
+        45,
+        28,
+        147,
+        197
+      ]
+    },
+    {
+      "file": "dragged/02.png",
+      "opaque_bounds": [
+        45,
+        28,
+        146,
+        202
+      ]
+    },
+    {
+      "file": "dragged/03.png",
+      "opaque_bounds": [
+        46,
+        28,
+        145,
+        197
+      ]
+    },
+    {
+      "file": "petting/00.png",
+      "opaque_bounds": [
+        46,
+        29,
+        145,
+        201
+      ]
+    },
+    {
+      "file": "petting/01.png",
+      "opaque_bounds": [
+        41,
+        29,
+        150,
+        202
+      ]
+    },
+    {
+      "file": "petting/02.png",
+      "opaque_bounds": [
+        42,
+        37,
+        150,
+        202
+      ]
+    },
+    {
+      "file": "petting/03.png",
+      "opaque_bounds": [
+        46,
+        29,
+        145,
+        201
+      ]
+    },
+    {
+      "file": "grab-right/00.png",
+      "opaque_bounds": [
+        19,
+        57,
+        172,
+        202
+      ]
+    },
+    {
+      "file": "grab-right/01.png",
+      "opaque_bounds": [
+        11,
+        60,
+        180,
+        202
+      ]
+    },
+    {
+      "file": "grab-right/02.png",
+      "opaque_bounds": [
+        10,
+        61,
+        181,
+        202
+      ]
+    },
+    {
+      "file": "grab-right/03.png",
+      "opaque_bounds": [
+        11,
+        60,
+        180,
+        202
+      ]
+    },
+    {
+      "file": "release-right/00.png",
+      "opaque_bounds": [
+        11,
+        60,
+        180,
+        202
+      ]
+    },
+    {
+      "file": "release-right/01.png",
+      "opaque_bounds": [
+        10,
+        61,
+        181,
+        202
+      ]
+    },
+    {
+      "file": "release-right/02.png",
+      "opaque_bounds": [
+        11,
+        60,
+        180,
+        202
+      ]
+    },
+    {
+      "file": "release-right/03.png",
+      "opaque_bounds": [
+        19,
+        57,
+        172,
+        202
+      ]
+    },
+    {
+      "file": "grab-left/00.png",
+      "opaque_bounds": [
+        20,
+        57,
+        173,
+        202
+      ]
+    },
+    {
+      "file": "grab-left/01.png",
+      "opaque_bounds": [
+        12,
+        60,
+        181,
+        202
+      ]
+    },
+    {
+      "file": "grab-left/02.png",
+      "opaque_bounds": [
+        11,
+        61,
+        182,
+        202
+      ]
+    },
+    {
+      "file": "grab-left/03.png",
+      "opaque_bounds": [
+        12,
+        60,
+        181,
+        202
+      ]
+    },
+    {
+      "file": "release-left/00.png",
+      "opaque_bounds": [
+        12,
+        60,
+        181,
+        202
+      ]
+    },
+    {
+      "file": "release-left/01.png",
+      "opaque_bounds": [
+        11,
+        61,
+        182,
+        202
+      ]
+    },
+    {
+      "file": "release-left/02.png",
+      "opaque_bounds": [
+        12,
+        60,
+        181,
+        202
+      ]
+    },
+    {
+      "file": "release-left/03.png",
+      "opaque_bounds": [
+        20,
+        57,
+        173,
+        202
+      ]
+    },
+    {
+      "file": "pull-right/00.png",
+      "opaque_bounds": [
+        16,
+        58,
+        175,
+        202
+      ]
+    },
+    {
+      "file": "pull-right/01.png",
+      "opaque_bounds": [
+        13,
+        58,
+        178,
+        202
+      ]
+    },
+    {
+      "file": "pull-right/02.png",
+      "opaque_bounds": [
+        21,
+        57,
+        170,
+        202
+      ]
+    },
+    {
+      "file": "pull-right/03.png",
+      "opaque_bounds": [
+        15,
+        58,
+        177,
+        202
+      ]
+    },
+    {
+      "file": "pull-right/04.png",
+      "opaque_bounds": [
+        16,
+        58,
+        175,
+        202
+      ]
+    },
+    {
+      "file": "pull-right/05.png",
+      "opaque_bounds": [
+        16,
+        58,
+        175,
+        202
+      ]
+    },
+    {
+      "file": "pull-right/06.png",
+      "opaque_bounds": [
+        17,
+        57,
+        174,
+        202
+      ]
+    },
+    {
+      "file": "pull-right/07.png",
+      "opaque_bounds": [
+        17,
+        58,
+        174,
+        202
+      ]
+    },
+    {
+      "file": "pull-left/00.png",
+      "opaque_bounds": [
+        17,
+        58,
+        176,
+        202
+      ]
+    },
+    {
+      "file": "pull-left/01.png",
+      "opaque_bounds": [
+        14,
+        58,
+        179,
+        202
+      ]
+    },
+    {
+      "file": "pull-left/02.png",
+      "opaque_bounds": [
+        22,
+        57,
+        171,
+        202
+      ]
+    },
+    {
+      "file": "pull-left/03.png",
+      "opaque_bounds": [
+        15,
+        58,
+        177,
+        202
+      ]
+    },
+    {
+      "file": "pull-left/04.png",
+      "opaque_bounds": [
+        17,
+        58,
+        176,
+        202
+      ]
+    },
+    {
+      "file": "pull-left/05.png",
+      "opaque_bounds": [
+        17,
+        58,
+        176,
+        202
+      ]
+    },
+    {
+      "file": "pull-left/06.png",
+      "opaque_bounds": [
+        18,
+        57,
+        175,
+        202
+      ]
+    },
+    {
+      "file": "pull-left/07.png",
+      "opaque_bounds": [
+        18,
+        58,
+        175,
+        202
+      ]
+    },
+    {
+      "file": "chase-tail/00.png",
+      "opaque_bounds": [
+        45,
+        28,
+        146,
+        202
+      ]
+    },
+    {
+      "file": "chase-tail/01.png",
+      "opaque_bounds": [
+        39,
+        34,
+        153,
+        202
+      ]
+    },
+    {
+      "file": "chase-tail/02.png",
+      "opaque_bounds": [
+        24,
+        37,
+        168,
+        202
+      ]
+    },
+    {
+      "file": "chase-tail/03.png",
+      "opaque_bounds": [
+        43,
+        29,
+        149,
+        202
+      ]
+    },
+    {
+      "file": "chase-tail/04.png",
+      "opaque_bounds": [
+        55,
+        24,
+        137,
+        202
+      ]
+    },
+    {
+      "file": "chase-tail/05.png",
+      "opaque_bounds": [
+        39,
+        30,
+        152,
+        202
+      ]
+    },
+    {
+      "file": "chase-tail/06.png",
+      "opaque_bounds": [
+        20,
+        33,
+        171,
+        202
+      ]
+    },
+    {
+      "file": "chase-tail/07.png",
+      "opaque_bounds": [
+        45,
+        31,
+        147,
+        202
+      ]
+    },
+    {
+      "file": "stretch-yawn/00.png",
+      "opaque_bounds": [
+        46,
+        29,
+        145,
+        201
+      ]
+    },
+    {
+      "file": "stretch-yawn/01.png",
+      "opaque_bounds": [
+        42,
+        44,
+        149,
+        202
+      ]
+    },
+    {
+      "file": "stretch-yawn/02.png",
+      "opaque_bounds": [
+        34,
+        51,
+        157,
+        202
+      ]
+    },
+    {
+      "file": "stretch-yawn/03.png",
+      "opaque_bounds": [
+        36,
+        51,
+        156,
+        202
+      ]
+    },
+    {
+      "file": "stretch-yawn/04.png",
+      "opaque_bounds": [
+        38,
+        51,
+        153,
+        202
+      ]
+    },
+    {
+      "file": "stretch-yawn/05.png",
+      "opaque_bounds": [
+        48,
+        30,
+        144,
+        202
+      ]
+    },
+    {
+      "file": "stretch-yawn/06.png",
+      "opaque_bounds": [
+        46,
+        31,
+        145,
+        202
+      ]
+    },
+    {
+      "file": "stretch-yawn/07.png",
+      "opaque_bounds": [
+        46,
+        29,
+        145,
+        201
+      ]
+    },
+    {
+      "file": "sit-down/00.png",
+      "opaque_bounds": [
+        46,
+        29,
+        145,
+        201
+      ]
+    },
+    {
+      "file": "sit-down/01.png",
+      "opaque_bounds": [
+        44,
+        40,
+        148,
+        202
+      ]
+    },
+    {
+      "file": "sit-down/02.png",
+      "opaque_bounds": [
+        49,
+        50,
+        143,
+        202
+      ]
+    },
+    {
+      "file": "sit-down/03.png",
+      "opaque_bounds": [
+        49,
+        60,
+        143,
+        202
+      ]
+    },
+    {
+      "file": "sit-down/04.png",
+      "opaque_bounds": [
+        48,
+        65,
+        144,
+        202
+      ]
+    },
+    {
+      "file": "sit-down/05.png",
+      "opaque_bounds": [
+        50,
+        66,
+        141,
+        202
+      ]
+    },
+    {
+      "file": "stand-up/00.png",
+      "opaque_bounds": [
+        50,
+        66,
+        141,
+        202
+      ]
+    },
+    {
+      "file": "stand-up/01.png",
+      "opaque_bounds": [
+        48,
+        65,
+        144,
+        202
+      ]
+    },
+    {
+      "file": "stand-up/02.png",
+      "opaque_bounds": [
+        49,
+        60,
+        143,
+        202
+      ]
+    },
+    {
+      "file": "stand-up/03.png",
+      "opaque_bounds": [
+        49,
+        50,
+        143,
+        202
+      ]
+    },
+    {
+      "file": "stand-up/04.png",
+      "opaque_bounds": [
+        44,
+        40,
+        148,
+        202
+      ]
+    },
+    {
+      "file": "stand-up/05.png",
+      "opaque_bounds": [
+        46,
+        29,
+        145,
+        201
+      ]
+    },
+    {
+      "file": "watch-idle/00.png",
+      "opaque_bounds": [
+        50,
+        66,
+        141,
+        202
+      ]
+    },
+    {
+      "file": "watch-idle/01.png",
+      "opaque_bounds": [
+        46,
+        68,
+        139,
+        202
+      ]
+    },
+    {
+      "file": "watch-idle/02.png",
+      "opaque_bounds": [
+        49,
+        65,
+        139,
+        202
+      ]
+    },
+    {
+      "file": "watch-idle/03.png",
+      "opaque_bounds": [
+        48,
+        66,
+        138,
+        202
+      ]
+    },
+    {
+      "file": "watch-idle/04.png",
+      "opaque_bounds": [
+        49,
+        68,
+        139,
+        202
+      ]
+    },
+    {
+      "file": "watch-idle/05.png",
+      "opaque_bounds": [
+        50,
+        66,
+        141,
+        202
+      ]
+    },
+    {
+      "file": "ear-scratch-enter/00.png",
+      "opaque_bounds": [
+        50,
+        66,
+        141,
+        202
+      ]
+    },
+    {
+      "file": "ear-scratch-enter/01.png",
+      "opaque_bounds": [
+        60,
+        68,
+        137,
+        202
+      ]
+    },
+    {
+      "file": "ear-scratch-enter/02.png",
+      "opaque_bounds": [
+        60,
+        74,
+        139,
+        202
+      ]
+    },
+    {
+      "file": "ear-scratch-loop/00.png",
+      "opaque_bounds": [
+        60,
+        74,
+        139,
+        202
+      ]
+    },
+    {
+      "file": "ear-scratch-loop/01.png",
+      "opaque_bounds": [
+        58,
+        68,
+        138,
+        202
+      ]
+    },
+    {
+      "file": "ear-scratch-loop/02.png",
+      "opaque_bounds": [
+        60,
+        73,
+        139,
+        202
+      ]
+    },
+    {
+      "file": "ear-scratch-loop/03.png",
+      "opaque_bounds": [
+        59,
+        68,
+        139,
+        202
+      ]
+    },
+    {
+      "file": "ear-scratch-exit/00.png",
+      "opaque_bounds": [
+        60,
+        74,
+        139,
+        202
+      ]
+    },
+    {
+      "file": "ear-scratch-exit/01.png",
+      "opaque_bounds": [
+        56,
+        68,
+        136,
+        202
+      ]
+    },
+    {
+      "file": "ear-scratch-exit/02.png",
+      "opaque_bounds": [
+        50,
+        66,
+        141,
+        202
+      ]
+    },
+    {
+      "file": "look/000.png",
+      "opaque_bounds": [
+        44,
+        29,
+        143,
+        202
+      ]
+    },
+    {
+      "file": "look/022.5.png",
+      "opaque_bounds": [
+        46,
+        29,
+        142,
+        202
+      ]
+    },
+    {
+      "file": "look/045.png",
+      "opaque_bounds": [
+        46,
+        29,
+        142,
+        202
+      ]
+    },
+    {
+      "file": "look/067.5.png",
+      "opaque_bounds": [
+        46,
+        29,
+        142,
+        202
+      ]
+    },
+    {
+      "file": "look/090.png",
+      "opaque_bounds": [
+        46,
+        32,
+        143,
+        202
+      ]
+    },
+    {
+      "file": "look/112.5.png",
+      "opaque_bounds": [
+        45,
+        35,
+        142,
+        202
+      ]
+    },
+    {
+      "file": "look/135.png",
+      "opaque_bounds": [
+        45,
+        43,
+        142,
+        202
+      ]
+    },
+    {
+      "file": "look/157.5.png",
+      "opaque_bounds": [
+        47,
+        49,
+        142,
+        202
+      ]
+    },
+    {
+      "file": "look/180.png",
+      "opaque_bounds": [
+        44,
+        37,
+        143,
+        202
+      ]
+    },
+    {
+      "file": "look/202.5.png",
+      "opaque_bounds": [
+        40,
+        40,
+        142,
+        202
+      ]
+    },
+    {
+      "file": "look/225.png",
+      "opaque_bounds": [
+        35,
+        36,
+        143,
+        202
+      ]
+    },
+    {
+      "file": "look/247.5.png",
+      "opaque_bounds": [
+        30,
+        33,
+        143,
+        202
+      ]
+    },
+    {
+      "file": "look/270.png",
+      "opaque_bounds": [
+        27,
+        30,
+        143,
+        202
+      ]
+    },
+    {
+      "file": "look/292.5.png",
+      "opaque_bounds": [
+        30,
+        25,
+        143,
+        202
+      ]
+    },
+    {
+      "file": "look/315.png",
+      "opaque_bounds": [
+        35,
+        22,
+        142,
+        202
+      ]
+    },
+    {
+      "file": "look/337.5.png",
+      "opaque_bounds": [
+        40,
+        22,
+        142,
+        202
+      ]
+    },
+    {
+      "file": "watch-look/000.png",
+      "opaque_bounds": [
+        50,
+        42,
+        141,
+        202
+      ]
+    },
+    {
+      "file": "watch-look/045.png",
+      "opaque_bounds": [
+        49,
+        44,
+        140,
+        202
+      ]
+    },
+    {
+      "file": "watch-look/090.png",
+      "opaque_bounds": [
+        49,
+        43,
+        140,
+        202
+      ]
+    },
+    {
+      "file": "watch-look/135.png",
+      "opaque_bounds": [
+        48,
+        56,
+        139,
+        202
+      ]
+    },
+    {
+      "file": "watch-look/180.png",
+      "opaque_bounds": [
+        49,
+        68,
+        140,
+        202
+      ]
+    },
+    {
+      "file": "watch-look/225.png",
+      "opaque_bounds": [
+        38,
+        59,
+        140,
+        202
+      ]
+    },
+    {
+      "file": "watch-look/270.png",
+      "opaque_bounds": [
+        39,
+        43,
+        140,
+        202
+      ]
+    },
+    {
+      "file": "watch-look/315.png",
+      "opaque_bounds": [
+        45,
+        53,
+        136,
+        202
+      ]
+    }
+  ]
+}

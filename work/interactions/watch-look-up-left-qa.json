@@ -1,0 +1,24 @@
+{
+  "state": "watch-look-up-left",
+  "frames": 1,
+  "scale": 0.14285714285714285,
+  "source_bounds": [
+    [
+      268,
+      167,
+      905,
+      1209
+    ]
+  ],
+  "frame_bounds": [
+    [
+      45,
+      53,
+      136,
+      202
+    ]
+  ],
+  "despill_changed_pixels": [
+    1059
+  ]
+}

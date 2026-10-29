@@ -1,0 +1,2 @@
+Started: real UI/hit mask/native messages; isolated calm interval, fake cursor.
+PASS: native WM_NCHITTEST/WM_LBUTTONUP on rendered silhouette in Walking and Idle, transparent click ignored, movement stops, no repeat restart, queue unchanged, pause/hide freeze and resume, fresh Idle/calm reset, active Stretch rejects petting, no activation. Physical hardware mouse clicks/routing to other apps not performed.

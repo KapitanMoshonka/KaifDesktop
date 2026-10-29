@@ -1,0 +1,2 @@
+Normal UI smoke started.
+PASS: 75 seconds; minimized unowned APPWINDOW visible with no TOOLWINDOW, no startup focus capture; restore control window, synchronized pause/hide/show/return buttons and tray; walking, HTTRANSPARENT, MA_NOACTIVATE, pet never foreground. GDI baseline=31 max=31 final=31; USER baseline=38 final=38. Physical taskbar clicks not asserted; control Close tested for exit.

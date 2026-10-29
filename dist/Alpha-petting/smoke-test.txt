@@ -1,0 +1,2 @@
+Normal UI smoke started.
+PASS: 75 seconds; previous budgets/scenes/queue/cursor-release regression; meme manual button left screen and completed real owned image window pull/release, fixed image scales, no size fields, seventh queue entry integrated. Windows cursor remains fake in smoke. GDI baseline=35 max=38 final=35; USER baseline=47 final=47. Own delivered image closed and disposed; clean Close exit.

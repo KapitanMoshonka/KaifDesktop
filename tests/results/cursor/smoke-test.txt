@@ -1,0 +1,2 @@
+Normal UI smoke started.
+PASS: 75 seconds; roaming/taskbar/tray/four existing scenarios/sleep hit test; manual cursor button used fake adapter, attached, received Escape WM_HOTKEY and released; background restarted. Real cursor adapter was never constructed in smoke. GDI baseline=31 max=31 final=31; USER baseline=29 final=29. Physical mouse dispatch/hotkey registration not asserted; clean Close exit.

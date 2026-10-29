@@ -1,0 +1,2 @@
+Normal UI smoke started.
+PASS: 75 seconds; pause/show/hide/return, walking, HTTRANSPARENT, MA_NOACTIVATE, never foreground. GDI baseline=25 max=25 final=25; USER baseline=12 final=12. Tray handlers tested programmatically; visual rendering and physical mouse clicks not asserted.
