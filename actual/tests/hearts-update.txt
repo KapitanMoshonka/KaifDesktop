@@ -1,0 +1,1 @@
+PASS: four approved RGBA192x208 petting frames installed, unchanged durations180/220/350/220ms. Published PNG SHA256 matches candidate. Existing actual EXE unchanged; --self-test from TEMP exit0. No new image generations; no code or walking changes. User app check pending.

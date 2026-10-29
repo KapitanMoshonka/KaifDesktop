@@ -102,6 +102,7 @@ The control window starts minimized. Calm click plays petting; drag is forbidden
 cursor/meme interactions. Escape releases the cursor. Close the control window to exit.
 Spin action uses the user-approved v5 animation: 10 frames, 1150 ms per cycle;
 TailCycles still sets the number of cycles (default 3). Its button is named "Крутись".
+Petting uses the approved pink-heart effect; the four frames and timings are preserved.
 The checkbox "Включить захват мышки" defaults to enabled and is saved immediately.
 Turning it off removes all waiting Cursor actions, disables manual cursor capture and
 safely releases an active capture. Watch, petting and dragging the pet remain available.

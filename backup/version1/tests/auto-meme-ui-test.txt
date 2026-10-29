@@ -1,2 +1,0 @@
-Started: production UI timer, diagnosticMode=False, reproducible queue RNG, isolated 1s calm timer, actual image window, fake cursor.
-PASS: startup availability=7 -> first random queue -> real 33ms timer -> auto dequeue/Meme.Start -> leave -> open/prepare -> grab -> pull -> release/completed. Manual=False; AutomaticCount=1; diagnosticMode=False; pet fully outside screen; actual image window visible; EnvironmentChanged/Clamp/Synchronize/Valid/Faulted did not cancel. Elapsed=7,33s. Normal RNG/probabilities unchanged.
