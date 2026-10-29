@@ -1,0 +1,70 @@
+{
+  "display_name": "Крутись",
+  "revision": 5,
+  "status": "candidate_pending_user_review",
+  "internal_animation_key": null,
+  "integration_note": "Master chase-tail key is unchanged; decide key only during integration.",
+  "frame_width": 192,
+  "frame_height": 208,
+  "format": "PNG RGBA",
+  "frames": [
+    "frames/00.png",
+    "frames/01.png",
+    "frames/02.png",
+    "frames/03.png",
+    "frames/04.png",
+    "frames/05.png",
+    "frames/06.png",
+    "frames/07.png",
+    "frames/08.png",
+    "frames/09.png"
+  ],
+  "durations_ms": [
+    150,
+    100,
+    100,
+    100,
+    100,
+    100,
+    150,
+    100,
+    150,
+    100
+  ],
+  "loop": true,
+  "cycle_ms": 1150,
+  "ground_y": 202,
+  "registration": "06: lower-body horizontal registration to v4, same height/baseline; other frames copied unchanged",
+  "reference": {
+    "file": "../reference/golden-retriever-dog.gif",
+    "frames": 23,
+    "duration_ms": 1150,
+    "selected_frame_indices": [
+      0,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      16,
+      18,
+      21
+    ]
+  },
+  "source": "sources/exec-dac1fb2d-c770-4416-ae9f-1a983a3de991.png",
+  "changed_frames": [
+    6
+  ],
+  "unchanged_frames": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9
+  ]
+}

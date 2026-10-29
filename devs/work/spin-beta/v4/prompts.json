@@ -1,0 +1,9 @@
+{
+  "tool": "built-in imagegen",
+  "revision": 4,
+  "request": "Кадр 06 должен смотреть правее.",
+  "prompt": "Use case: precise-object-edit. Edit this single existing Kaifik sprite, frame06 of a turning animation.\nUser correction: the dog must look farther to SCREEN RIGHT in this frame.\nChange ONLY THE HEAD AND UPPER NECK DIRECTION. Turn the head a further clear 20-25 degrees into the RIGHTWARD turn and point the muzzle more decisively toward the RIGHT EDGE OF THE IMAGE. The nose should extend farther screen-right from the shoulder/ear silhouette, with a more horizontally right-pointing muzzle and a more readable right-facing cheek/eye. Rotate the anatomical head, not only the pupils. The result must visibly look MORE RIGHTWARD than the provided pose, not an identical head. Keep the head's physical size and muzzle length, natural short canine neck, no neck stretching, no dislocated skull. Do not turn the head left, away, upward or directly toward the viewer.\nKEEP EXACTLY the current REAR-FACING BODY, hips, paws, four-leg pose, curled tail on rump, proportions, color markings, fur style and floor level. Do not rotate the torso or change any paw. This remains rear-view body with its head actively leading toward screen right.\nPreserve the pleased expression from the reference: soft almond eye, relaxed smile, slightly open mouth, small pink tongue. Preserve the two clean triangular ears; no third ear/lump/tag or object. Same adult red Shiba identity and illustrated sprite rendering.\nOne full dog, entirely contained with transparent margins. Genuine fully transparent RGBA background, opaque fur, clean antialiased edges, no shadows, text, effects, props, scenery, colored halos or checkerboard. Keep the image framing and dog placement stable.",
+  "source": "sources/exec-a24cbb76-a203-4a32-9ef5-d705135ffdf8.png",
+  "edit_target": "edit-target-06.png",
+  "status": "candidate_pending_user_review"
+}

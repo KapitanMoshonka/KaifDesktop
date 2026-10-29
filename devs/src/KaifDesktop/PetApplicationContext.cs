@@ -44,15 +44,17 @@ namespace KaifDesktop
         private readonly AutomaticMemeUiTest automaticTest;
         private readonly PettingUiTest pettingTest;
         private readonly DragUiTest dragTest;
-        internal PetApplicationContext(bool testing, bool automatic = false, bool pettingProbe = false, bool dragProbe = false)
+        private readonly CursorSettingUiTest cursorSettingTest;
+        internal PetApplicationContext(bool testing, bool automatic = false, bool pettingProbe = false, bool dragProbe = false, bool cursorSettingProbe = false)
         {
             diagnosticMode = testing;
             try
             {
-                store = new SettingsStore(dragProbe ? Path.Combine(Diagnostics.DataDirectory, "drag-test") : pettingProbe ? Path.Combine(Diagnostics.DataDirectory, "petting-test") : automatic ? Path.Combine(Diagnostics.DataDirectory, "auto-meme-test") : testing ? Path.Combine(Diagnostics.DataDirectory, "smoke-test") : Diagnostics.DataDirectory);
+                store = new SettingsStore(cursorSettingProbe ? Path.Combine(Diagnostics.DataDirectory, "cursor-setting-test") : dragProbe ? Path.Combine(Diagnostics.DataDirectory, "drag-test") : pettingProbe ? Path.Combine(Diagnostics.DataDirectory, "petting-test") : automatic ? Path.Combine(Diagnostics.DataDirectory, "auto-meme-test") : testing ? Path.Combine(Diagnostics.DataDirectory, "smoke-test") : Diagnostics.DataDirectory);
                 settings = store.Load();
                 if (automatic) settings.CalmIntervalSeconds = 1; // Dedicated diagnostic settings only.
                 if (pettingProbe) settings.CalmIntervalSeconds = 600;
+                if (cursorSettingProbe) { settings.CalmIntervalSeconds = 600; settings.CursorCaptureEnabled = true; }
                 if (dragProbe) { settings.CalmIntervalSeconds = 600; settings.CursorTotalSeconds = 3; }
                 assets = new AssetCatalog(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Frames"));
                 animator = new SpriteAnimator(assets);
@@ -63,7 +65,7 @@ namespace KaifDesktop
                 scale = desktop.Scale(handle);
                 var size = desktop.SpriteSize(assets.FrameSize, scale);
                 behavior = new BasicBehaviorController(settings, new Random(), DesktopAreaService.MovementBounds(size, area));
-                cursorAdapter = testing || automatic || pettingProbe || dragProbe ? (ICursorAdapter)new FakeCursorAdapter() : new WindowsCursorAdapter(handle);
+                cursorAdapter = testing || automatic || pettingProbe || dragProbe || cursorSettingProbe ? (ICursorAdapter)new FakeCursorAdapter() : new WindowsCursorAdapter(handle);
                 var cursorAction = new CursorInteraction(behavior, assets, settings, cursorAdapter, new Random());
                 var watchAction = new WatchInteraction(behavior, assets, settings, cursorAdapter);
                 memes = new MemeQueue(new Random());
@@ -94,7 +96,7 @@ namespace KaifDesktop
                 menu.Items.Add("Выход", null, (s, e) => ExitThread());
                 tray = new NotifyIcon { Text = "Кайфик — альфа 0.1", Icon = SystemIcons.Application, ContextMenuStrip = menu, Visible = true };
                 tray.DoubleClick += (s, e) => ReturnToScreen();
-                controls = new ControlWindow(TogglePause, ToggleHidden, ReturnToScreen, ExitThread, StartManual, Wake, SkipUpcoming);
+                controls = new ControlWindow(TogglePause, ToggleHidden, ReturnToScreen, ExitThread, StartManual, Wake, SkipUpcoming, SetCursorCaptureEnabled);
                 controls.FormClosed += (s, e) => { if (!closing) ExitThread(); };
                 controls.Show();
                 RefreshInteractionState();
@@ -105,6 +107,7 @@ namespace KaifDesktop
                 if (automatic) automaticTest = new AutomaticMemeUiTest(this);
                 if (pettingProbe) pettingTest = new PettingUiTest(this);
                 if (dragProbe) dragTest = new DragUiTest(this);
+                if (cursorSettingProbe) cursorSettingTest = new CursorSettingUiTest(this);
                 Diagnostics.Event("app.context diagnosticMode=" + diagnosticMode + "; automaticProbe=" + automatic);
                 timer = new Timer { Interval = 33 };
                 timer.Tick += Tick;
@@ -188,6 +191,7 @@ namespace KaifDesktop
                 automaticTest?.Update(now);
                 pettingTest?.Update(now);
                 dragTest?.Update(now);
+                cursorSettingTest?.Update(now);
             }
             catch (Exception ex)
             {
@@ -200,6 +204,7 @@ namespace KaifDesktop
                 else if (automaticTest != null) automaticTest.Fail(ex);
                 else if (pettingTest != null) pettingTest.Fail(ex);
                 else if (dragTest != null) dragTest.Fail(ex);
+                else if (cursorSettingTest != null) cursorSettingTest.Fail(ex);
                 else MessageBox.Show("Кайфик остановлен: " + ex.Message, "Ошибка Кайфика", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 ExitThread();
             }
@@ -238,6 +243,15 @@ namespace KaifDesktop
             dirty = true; Draw(); RefreshInteractionState();
         }
         internal void SkipUpcoming() { activity.SkipNext(); RefreshInteractionState(); }
+        internal void SetCursorCaptureEnabled(bool enabled)
+        {
+            activity.SetCursorCaptureEnabled(enabled);
+            if (!store.Save(settings)) tray.ShowBalloonTip(5000, "Кайфик", "Не удалось сохранить настройку захвата мышки.", ToolTipIcon.Warning);
+            animator.SetTime(activity.Animation, activity.AnimationElapsedMs);
+            dirty = true;
+            if (!hidden) Draw();
+            RefreshInteractionState();
+        }
         private bool BeginPointerDrag()
         {
             if (hidden || closing || !activity.BeginDrag()) return false;
@@ -271,12 +285,13 @@ namespace KaifDesktop
             else if (activity.Petting) description = "Кайфик радуется поглаживанию.";
             else if (activity.Active)
             {
-                string[] names = { "Кайфик укладывается или спит", "Кайфик гоняется за хвостом", "Кайфик потягивается и зевает", "Кайфик чешет за ухом", "Кайфик ловит курсор. Escape — отпустить", "Кайфик подходит, садится и наблюдает", "Кайфик приносит мем" };
+                string[] names = { "Кайфик укладывается или спит", "Кайфик крутится", "Кайфик потягивается и зевает", "Кайфик чешет за ухом", "Кайфик ловит курсор. Escape — отпустить", "Кайфик подходит, садится и наблюдает", "Кайфик приносит мем" };
                 description = names[(int)activity.Kind.Value] + (activity.Manual ? " (вручную)." : " (случайно).");
                 if (activity.Kind == InteractionKind.Sleep)
                     description = (activity.Sleeping ? "Кайфик спит. Клик по силуэту будит." : activity.Animation == "wake-up" ? "Кайфик просыпается." : "Кайфик укладывается.") + (activity.Manual ? " (вручную)" : " (случайно)");
             }
             controls?.UpdateState(paused, hidden, activity.Active, activity.Sleeping, description);
+            controls?.UpdateCursorCapture(activity.CursorCaptureEnabled);
             controls?.UpdateQueue(activity.ActionQueue);
             controls?.UpdateMemeStatus(activity.MemeAction.Status, memes.Source, memes.Preview.Take(2).Select(Path.GetFileName).ToArray());
         }

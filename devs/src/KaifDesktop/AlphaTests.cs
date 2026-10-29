@@ -110,6 +110,7 @@ namespace KaifDesktop
                     MemeTests.Run(assets);
                     PettingTests.Run(assets);
                     DragTests.Run(assets);
+                    CursorSettingTests.Run(assets);
                 }
                 var original = new Size(192, 208);
                 var area = new Rectangle(-200, 0, 1920, 1080);
@@ -294,7 +295,7 @@ namespace KaifDesktop
                 AlphaTests.Check(app.ControlsWindow.SkipButton.Text == "Пропустить действие" && app.ControlsWindow.SkipButton.Enabled, "Exact skip button present and enabled");
                 app.ControlsWindow.SkipButton.PerformClick();
                 AlphaTests.Check(app.Activity.Kind == InteractionKind.Sleep && app.Activity.Active && app.Activity.AnimationElapsedMs == activeElapsed, "UI skip preserves current sleep");
-                string[] queueNames = { "Сон", "Погоня за хвостом", "Потягивание и зевок", "Чесание за ухом", "Захват курсора", "Наблюдение сидя", "Принести мем" };
+                string[] queueNames = { "Сон", "Крутись", "Потягивание и зевок", "Чесание за ухом", "Захват курсора", "Наблюдение сидя", "Принести мем" };
                 var displayed = app.Activity.ActionQueue.Preview.Take(6).Select((kind, index) => (index + 1) + ". " + queueNames[(int)kind]);
                 AlphaTests.Check(app.Activity.ActionQueue.Preview[0] == beforeSkip[1] && app.ControlsWindow.QueueList.Items.Cast<string>().SequenceEqual(displayed), "UI skip updates preview immediately");
             }
@@ -309,9 +310,17 @@ namespace KaifDesktop
             {
                 AlphaTests.Check(moved, "Walking occurred");
                 AlphaTests.Check(interactionStage == 20, "Scenes, queue, meme leave/pull/release and background restart verified");
+                // A random post-regression Meme may leave another legitimate image window open.
+                // Compare resources after disposing those owned diagnostic windows, like the manual one.
+                int imageWindows = app.TestMemeWindows.WindowCount;
+                if (app.Activity.MemeAction.Active) app.Activity.CancelMeme();
+                app.TestMemeWindows.CloseReleased();
+                AlphaTests.Check(app.TestMemeWindows.WindowCount == 0, "All manual/automatic diagnostic images disposed before resource comparison");
+                gdi = NativeMethods.GetGuiResources(process.Handle, 0);
                 AlphaTests.Check(gdi <= baselineGdi + 5 && maximumGdi <= baselineGdi + 8, "GDI growth");
                 uint user = NativeMethods.GetGuiResources(process.Handle, 1);
-                AlphaTests.Check(user <= baselineUser + 5, "USER growth");
+                AlphaTests.Check(user <= baselineUser + 5, "USER growth: baseline=" + baselineUser + ", final=" + user + ", disposed images=" + imageWindows);
+                File.AppendAllText(report, "Resource checkpoint: disposed remaining automatic image windows=" + imageWindows + ".\r\n");
                 File.AppendAllText(report, "PASS: 75 seconds; previous budgets/scenes/queue/cursor-release regression; meme manual button left screen and completed real owned image window pull/release, fixed image scales, no size fields, seventh queue entry integrated. Windows cursor remains fake in smoke. GDI baseline=" + baselineGdi + " max=" + maximumGdi + " final=" + gdi + "; USER baseline=" + baselineUser + " final=" + user + ". Own delivered image closed and disposed; clean Close exit.\r\n");
                 app.ControlsWindow.Close();
             }

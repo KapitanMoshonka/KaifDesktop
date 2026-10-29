@@ -604,19 +604,25 @@
         "chase-tail/04.png",
         "chase-tail/05.png",
         "chase-tail/06.png",
-        "chase-tail/07.png"
+        "chase-tail/07.png",
+        "chase-tail/08.png",
+        "chase-tail/09.png"
       ],
       "durations_ms": [
-        140,
-        140,
-        140,
-        140,
-        140,
-        140,
-        140,
-        140
+        150,
+        100,
+        100,
+        100,
+        100,
+        100,
+        150,
+        100,
+        150,
+        100
       ],
-      "loop": true
+      "loop": true,
+      "revision": "spin-v5-2026-10-29",
+      "display_name": "Крутись"
     },
     "stretch-yawn": {
       "frames": [
@@ -833,7 +839,7 @@
     "mouth": "Per-frame mouth_anchors_px: [x,y] in the 192x208 PNG, origin top-left. Mirror x=191-x. Runtime must apply sprite scale and screen position."
   },
   "schema_version": 2,
-  "total_frame_count": 199,
+  "total_frame_count": 201,
   "generation": "Built-in imagegen artwork; deterministic chroma extraction, registration, mirroring and reversed transition frames. New desktop interaction package, 2026-10-18.",
   "watch_look_directions": [
     {

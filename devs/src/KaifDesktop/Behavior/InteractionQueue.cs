@@ -25,12 +25,12 @@ namespace KaifDesktop.Behavior
             return true;
         }
         public bool CanStart(InteractionKind kind) { return available.Contains(kind) && !(last == kind && run >= 2); }
-        public void SetAvailable(IEnumerable<InteractionKind> enabled)
+        public void SetAvailable(IEnumerable<InteractionKind> enabled, bool preserveTail = false)
         {
             var next = enabled.Distinct().OrderBy(x => x).ToArray();
             // A tail drawn from a different pool excludes new actions until it drains.
             // Rebuild from the actual history, retaining last/run and its max-two rule.
-            if (available == null || !available.SequenceEqual(next)) buffer.Clear();
+            if (available == null || (!preserveTail && !available.SequenceEqual(next))) buffer.Clear();
             available = next; ValidateTail();
         }
         public void ValidateTail()

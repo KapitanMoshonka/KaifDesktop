@@ -1,0 +1,30 @@
+{
+  "status": "candidate_pending_user_review",
+  "animation": "chase-tail",
+  "frame_width": 192,
+  "frame_height": 208,
+  "format": "PNG RGBA",
+  "frames": [
+    "frames/00.png",
+    "frames/01.png",
+    "frames/02.png",
+    "frames/03.png",
+    "frames/04.png",
+    "frames/05.png",
+    "frames/06.png"
+  ],
+  "durations_ms": [
+    160,
+    160,
+    160,
+    160,
+    160,
+    160,
+    160
+  ],
+  "loop": true,
+  "cycle_ms": 1120,
+  "ground_y": 202,
+  "registration": "shared isotropic scale; silhouette centered; lower support bound y=202",
+  "source": "sources/exec-fe69b447-1e65-4e09-b3ca-45e3d8d666e1.png"
+}

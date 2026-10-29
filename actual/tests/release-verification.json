@@ -1,0 +1,17 @@
+{
+  "StageId": "0572da4db7fd4a27831e2c84b84bc0df",
+  "Status": "Active",
+  "Utc": "2026-10-29T20:12:46.1590061Z",
+  "Release": "Partial beta stage: spin v5 and cursor capture setting",
+  "ExeSha256": "DAEDDC902AB3B70B2BA581D32CA76B3559B476C6A607D5E5EAB86A13BA78EAA9",
+  "PackagedFrames": 150,
+  "Memes": 9,
+  "CursorCaptureEnabled": true,
+  "BackupVersion1Fingerprint": "D94E67B41D60AC50E5D11C8B882DCD629573BDF2C64825F0DFFF8C62334929CD",
+  "BackupVersion2Fingerprint": "ADAF5B5BE5185481F0EA5F70E4FAE49B5169D05FD5C8FABD8D6F4E7F18A1F98E",
+  "SelfTest": "PASS on final actual EXE",
+  "NativeCheckboxSpinTest": "PASS on final actual EXE; fake cursor",
+  "Smoke": "PASS 75s on identical source candidate before final build; GDI 35/38/35 USER 48/48",
+  "ApproveRun": false,
+  "CommitPushRun": false
+}

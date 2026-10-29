@@ -1,0 +1,4 @@
+Normal UI smoke started.
+FAIL: System.Exception: USER growth
+   в KaifDesktop.SmokeTest.Update(Double time) в C:\Users\Maksim\Documents\Codex\KaifDesktop\devs\src\KaifDesktop\AlphaTests.cs:строка 253
+   в KaifDesktop.PetApplicationContext.Tick(Object sender, EventArgs args) в C:\Users\Maksim\Documents\Codex\KaifDesktop\devs\src\KaifDesktop\PetApplicationContext.cs:строка 191

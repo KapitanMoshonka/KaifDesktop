@@ -70,7 +70,7 @@ namespace KaifDesktop.Behavior
         private List<InteractionKind> EnabledKinds()
         {
             var enabled = new List<InteractionKind> { InteractionKind.Sleep, InteractionKind.ChaseTail, InteractionKind.Stretch, InteractionKind.Scratch };
-            if (cursorAction != null) enabled.Add(InteractionKind.Cursor);
+            if (cursorAction != null && settings.CursorCaptureEnabled) enabled.Add(InteractionKind.Cursor);
             if (watchAction != null) enabled.Add(InteractionKind.Watch);
             if (memeAction != null && memeAction.Available) enabled.Add(InteractionKind.Meme);
             return enabled;
@@ -81,6 +81,16 @@ namespace KaifDesktop.Behavior
             ActionQueue.SetAvailable(enabled);
             string state = "available=" + enabled.Contains(InteractionKind.Meme) + "; files=" + (memeAction == null ? 0 : memeAction.Memes.Files.Length) + "; reason=" + (enabled.Contains(InteractionKind.Meme) ? "ready" : memeAction?.Status ?? "no adapter");
             if (state != availabilityLog) { availabilityLog = state; Diagnostics.Event("meme.availability " + state + "; pool=" + string.Join(",", enabled)); LogQueue("availability"); }
+        }
+        public bool CursorCaptureEnabled { get { return settings.CursorCaptureEnabled; } }
+        public void SetCursorCaptureEnabled(bool enabled)
+        {
+            if (settings.CursorCaptureEnabled == enabled) return;
+            settings.CursorCaptureEnabled = enabled;
+            if (!enabled) CancelCursor(); // No old-position restore; other actions keep their progress.
+            ActionQueue.SetAvailable(EnabledKinds(), preserveTail: !enabled);
+            Diagnostics.Event("cursor.enabled=" + enabled);
+            LogQueue("cursor setting");
         }
         private void LogQueue(string reason) { Diagnostics.Event("queue.preview reason=" + reason + "; next=" + string.Join(",", ActionQueue.Preview)); }
         public bool SkipNext()
@@ -95,7 +105,7 @@ namespace KaifDesktop.Behavior
         { stages.Add(new Stage { Name = name, Duration = duration ?? assets.Clips[name].Duration / 1000.0 * cycles }); }
         public bool Start(InteractionKind kind, bool manual)
         {
-            if (Active || !ActionQueue.CanStart(kind)) return false;
+            if (Active || (kind == InteractionKind.Cursor && !settings.CursorCaptureEnabled) || !ActionQueue.CanStart(kind)) return false;
             Kind = kind; Manual = manual; stageIndex = 0; stageElapsed = 0;
             switch (kind)
             {

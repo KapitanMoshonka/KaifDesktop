@@ -1,4 +1,4 @@
-# From the workspace root:
+﻿# From the workspace root:
 #   ./devs/release-stage.ps1 Begin       # explicit, once before changing a release
 #   ./devs/build.ps1                    # stages, self-tests, then publishes to actual
 #   ./devs/build.ps1 -OutputDirectory '.build/check/package'  # new temporary output
@@ -85,10 +85,14 @@ try {
     if ([string]::IsNullOrWhiteSpace($memePath) -or $memePath.Trim().Replace('/', '\').TrimEnd('\') -ieq 'C:\Users\SirxM\KaifDesktop\Frames\memes') {
         $settings | Add-Member -NotePropertyName MemeSourceDirectory -NotePropertyValue 'memes' -Force
     }
+    if (!(@($settings.PSObject.Properties | ForEach-Object { $_.Name }) -contains 'CursorCaptureEnabled')) {
+        $settings | Add-Member -NotePropertyName CursorCaptureEnabled -NotePropertyValue $true
+    }
     $settings | ConvertTo-Json -Depth 12 | Set-Content -LiteralPath (Join-Path $package 'data/settings.json') -Encoding UTF8
     $description = Join-Path $package 'Decription.md'
     @"
-# KaifDesktop
+# KaifDesktop — этап беты: «Крутись» и захват мышки
+This is one beta stage, not the completed full beta release.
 Windows x64 / .NET Framework 4.8. Run KaifDesktop.exe; keep the entire folder together.
 Frames/, memes/, meme-scales.json and data/settings.json are local to the executable.
 MemeSourceDirectory defaults to memes; explicitly configured custom paths are preserved.
@@ -96,6 +100,11 @@ Normal settings/logs are in data/. Diagnostic reports, settings and logs are in 
 Tray/control window: pause, hide/show, return, seven actions, queue skip and exit.
 The control window starts minimized. Calm click plays petting; drag is forbidden throughout
 cursor/meme interactions. Escape releases the cursor. Close the control window to exit.
+Spin action uses the user-approved v5 animation: 10 frames, 1150 ms per cycle;
+TailCycles still sets the number of cycles (default 3). Its button is named "Крутись".
+The checkbox "Включить захват мышки" defaults to enabled and is saved immediately.
+Turning it off removes all waiting Cursor actions, disables manual cursor capture and
+safely releases an active capture. Watch, petting and dragging the pet remain available.
 Headless check: KaifDesktop.exe --self-test. No real cursor movement or UI.
 UI, real mouse, monitors/DPI and visual acceptance need separate verification.
 Known unresolved issue: reported minimized meme windows. This build does not fix it.
@@ -112,8 +121,10 @@ MSBuild: $msbuild
 Release / net48 / C# 7.3 / x64 compilation and headless self-test passed.
 Self-test working directory: TEMP. See tests/build.log and tests/self-test.txt.
 Packaged $($snapshot.total_frame_count) sprite frames and $($memeFiles.Count) meme files.
-No UI/cursor tests run. Historical PASS is not new-machine UI validation.
-Beta animation changes and the minimized-meme fix are not implemented here.
+This build command runs no UI/cursor tests; separately executed UI checks are recorded in tests/.
+Historical PASS is not new-machine UI validation.
+Implemented: approved spin v5 and the persistent cursor-capture checkbox.
+Other beta animation work and the minimized-meme fix are not implemented here.
 "@ | Add-Content -LiteralPath $description -Encoding UTF8
     if ($publishing) { Publish-ReleasePackage $package $workspace }
     else { New-Item -ItemType Directory -Path (Split-Path $output) -Force | Out-Null; Move-Item -LiteralPath $package -Destination $output }

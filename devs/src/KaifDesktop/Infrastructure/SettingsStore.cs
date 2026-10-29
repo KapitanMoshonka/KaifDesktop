@@ -29,6 +29,7 @@ namespace KaifDesktop.Infrastructure
         public int TimingVersion { get; set; }
         public double WatchTotalSeconds { get; set; } = 20;
         public double CursorTotalSeconds { get; set; } = 15;
+        public bool CursorCaptureEnabled { get; set; } = true;
         public string MemeSourceDirectory { get; set; } = "memes";
         public void Validate()
         {

@@ -16,6 +16,8 @@ namespace KaifDesktop.UI
         internal readonly Button ExitButton = new Button();
         internal readonly Button SleepButton = new Button(), TailButton = new Button(), StretchButton = new Button(), ScratchButton = new Button(), WakeButton = new Button();
         internal readonly Button CursorButton = new Button();
+        internal readonly CheckBox CursorCaptureCheckBox = new CheckBox();
+        private bool updatingCursorCapture;
         internal readonly Button WatchButton = new Button();
         internal readonly Button MemeButton = new Button();
         internal readonly Button SkipButton = new Button();
@@ -24,7 +26,7 @@ namespace KaifDesktop.UI
         private string queueSignature;
         internal Button PauseButton { get { return pause; } }
         internal Button VisibilityButton { get { return visibility; } }
-        internal ControlWindow(Action togglePause, Action toggleHidden, Action returnPet, Action exit, Action<InteractionKind> start, Action wake, Action skip)
+        internal ControlWindow(Action togglePause, Action toggleHidden, Action returnPet, Action exit, Action<InteractionKind> start, Action wake, Action skip, Action<bool> setCursorCapture)
         {
             Text = "Кайфик — управление";
             Icon = SystemIcons.Application;
@@ -33,9 +35,9 @@ namespace KaifDesktop.UI
             MaximizeBox = false;
             StartPosition = FormStartPosition.CenterScreen;
             AutoScaleMode = AutoScaleMode.Dpi;
-            ClientSize = new Size(440, 640);
+            ClientSize = new Size(440, 672);
             WindowState = FormWindowState.Minimized;
-            var layout = new TableLayoutPanel { Dock = DockStyle.Fill, Padding = new Padding(14), ColumnCount = 2, RowCount = 11, AutoScroll = true, AutoScrollMinSize = new Size(0, 680) };
+            var layout = new TableLayoutPanel { Dock = DockStyle.Fill, Padding = new Padding(14), ColumnCount = 2, RowCount = 12, AutoScroll = true, AutoScrollMinSize = new Size(0, 712) };
             layout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50));
             layout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50));
             layout.RowStyles.Add(new RowStyle(SizeType.Absolute, 48));
@@ -45,6 +47,7 @@ namespace KaifDesktop.UI
             layout.RowStyles.Add(new RowStyle(SizeType.Absolute, 48));
             layout.RowStyles.Add(new RowStyle(SizeType.Absolute, 48));
             layout.RowStyles.Add(new RowStyle(SizeType.Absolute, 48));
+            layout.RowStyles.Insert(6, new RowStyle(SizeType.Absolute, 32));
             layout.RowStyles.Add(new RowStyle(SizeType.Absolute, 152));
             layout.RowStyles.Add(new RowStyle(SizeType.Absolute, 48));
             layout.RowStyles.Add(new RowStyle(SizeType.Absolute, 84));
@@ -59,7 +62,7 @@ namespace KaifDesktop.UI
             layout.Controls.Add(pause, 0, 1); layout.Controls.Add(visibility, 1, 1);
             layout.Controls.Add(ReturnButton, 0, 2); layout.Controls.Add(ExitButton, 1, 2);
             Configure(SleepButton, "Уложиться спать", () => start(InteractionKind.Sleep));
-            Configure(TailButton, "Погоня за хвостом", () => start(InteractionKind.ChaseTail));
+            Configure(TailButton, "Крутись", () => start(InteractionKind.ChaseTail));
             Configure(StretchButton, "Потянуться и зевнуть", () => start(InteractionKind.Stretch));
             Configure(ScratchButton, "Почесать за ухом", () => start(InteractionKind.Scratch));
             Configure(WakeButton, "Разбудить", wake);
@@ -67,8 +70,12 @@ namespace KaifDesktop.UI
             layout.Controls.Add(StretchButton, 0, 4); layout.Controls.Add(ScratchButton, 1, 4);
             Configure(CursorButton, "Поймать курсор (Esc)", () => start(InteractionKind.Cursor));
             layout.Controls.Add(WakeButton, 0, 5); layout.Controls.Add(CursorButton, 1, 5);
+            CursorCaptureCheckBox.Text = "Включить захват мышки";
+            CursorCaptureCheckBox.Dock = DockStyle.Fill;
+            CursorCaptureCheckBox.CheckedChanged += (s, e) => { if (!updatingCursorCapture) setCursorCapture(CursorCaptureCheckBox.Checked); };
+            layout.Controls.Add(CursorCaptureCheckBox, 0, 6); layout.SetColumnSpan(CursorCaptureCheckBox, 2);
             Configure(WatchButton, "Сесть рядом и наблюдать", () => start(InteractionKind.Watch));
-            layout.Controls.Add(WatchButton, 0, 6); layout.SetColumnSpan(WatchButton, 2);
+            layout.Controls.Add(WatchButton, 0, 7); layout.SetColumnSpan(WatchButton, 2);
             var help = new Label { Text = "Крестик закрывает приложение. Трей тоже доступен.", Dock = DockStyle.Fill, AutoSize = false };
             var queuePanel = new Panel { Dock = DockStyle.Fill };
             var queueLabel = new Label { Text = "Ближайшие действия (до 2 повторов подряд):", Dock = DockStyle.Top, Height = 24 };
@@ -76,12 +83,12 @@ namespace KaifDesktop.UI
             Configure(SkipButton, "Пропустить действие", skip); SkipButton.Dock = DockStyle.Bottom; SkipButton.Height = 32;
             queuePanel.Controls.Add(QueueList); queuePanel.Controls.Add(queueLabel);
             queuePanel.Controls.Add(SkipButton);
-            layout.Controls.Add(queuePanel, 0, 7); layout.SetColumnSpan(queuePanel, 2);
+            layout.Controls.Add(queuePanel, 0, 8); layout.SetColumnSpan(queuePanel, 2);
             Configure(MemeButton, "Принести мем", () => start(InteractionKind.Meme));
-            layout.Controls.Add(MemeButton, 0, 8); layout.SetColumnSpan(MemeButton, 2);
+            layout.Controls.Add(MemeButton, 0, 9); layout.SetColumnSpan(MemeButton, 2);
             memeStatus.Dock = DockStyle.Fill; memeStatus.AutoEllipsis = true;
-            layout.Controls.Add(memeStatus, 0, 9); layout.SetColumnSpan(memeStatus, 2);
-            layout.Controls.Add(help, 0, 10); layout.SetColumnSpan(help, 2);
+            layout.Controls.Add(memeStatus, 0, 10); layout.SetColumnSpan(memeStatus, 2);
+            layout.Controls.Add(help, 0, 11); layout.SetColumnSpan(help, 2);
             Controls.Add(layout);
             UpdateState(false, false);
         }
@@ -104,7 +111,7 @@ namespace KaifDesktop.UI
         internal void UpdateQueue(InteractionQueue queue)
         {
             SkipButton.Enabled = queue.CanSkip;
-            string[] names = { "Сон", "Погоня за хвостом", "Потягивание и зевок", "Чесание за ухом", "Захват курсора", "Наблюдение сидя", "Принести мем" };
+            string[] names = { "Сон", "Крутись", "Потягивание и зевок", "Чесание за ухом", "Захват курсора", "Наблюдение сидя", "Принести мем" };
             var preview = queue.Preview.Take(6).Select((kind, index) => (index + 1) + ". " + names[(int)kind]).ToArray();
             string signature = string.Join("|", preview);
             if (signature != queueSignature)
@@ -115,6 +122,12 @@ namespace KaifDesktop.UI
             Button[] buttons = { SleepButton, TailButton, StretchButton, ScratchButton, CursorButton, WatchButton };
             for (int i = 0; i < buttons.Length; i++) buttons[i].Enabled &= queue.CanStart((InteractionKind)i);
             MemeButton.Enabled &= !queue.IsAvailable(InteractionKind.Meme) || queue.CanStart(InteractionKind.Meme);
+        }
+        internal void UpdateCursorCapture(bool enabled)
+        {
+            updatingCursorCapture = true;
+            try { CursorCaptureCheckBox.Checked = enabled; }
+            finally { updatingCursorCapture = false; }
         }
         internal void UpdateMemeStatus(string text, string source, string[] next)
         { memeStatus.Text = text + "\nИсточник: " + source + "\nДалее: " + string.Join(" → ", next); }

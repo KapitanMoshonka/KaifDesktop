@@ -1,0 +1,295 @@
+{
+  "passed": true,
+  "errors": [],
+  "frames": 10,
+  "cycle_ms": 1150,
+  "source_size": [
+    2051,
+    767
+  ],
+  "source_pose_count": 10,
+  "registration": [
+    {
+      "source_crop": [
+        92,
+        19,
+        426,
+        364
+      ],
+      "local_bounds": [
+        2,
+        13,
+        334,
+        333
+      ],
+      "frame": 0,
+      "scale": 0.4930747922437673,
+      "offset": [
+        14,
+        44
+      ],
+      "bounds": [
+        14,
+        44,
+        178,
+        202
+      ]
+    },
+    {
+      "source_crop": [
+        541,
+        19,
+        754,
+        364
+      ],
+      "local_bounds": [
+        0,
+        17,
+        211,
+        333
+      ],
+      "frame": 1,
+      "scale": 0.4930747922437673,
+      "offset": [
+        44,
+        46
+      ],
+      "bounds": [
+        44,
+        46,
+        148,
+        202
+      ]
+    },
+    {
+      "source_crop": [
+        939,
+        19,
+        1123,
+        364
+      ],
+      "local_bounds": [
+        1,
+        13,
+        182,
+        343
+      ],
+      "frame": 2,
+      "scale": 0.4930747922437673,
+      "offset": [
+        51,
+        39
+      ],
+      "bounds": [
+        51,
+        39,
+        140,
+        202
+      ]
+    },
+    {
+      "source_crop": [
+        1247,
+        19,
+        1572,
+        364
+      ],
+      "local_bounds": [
+        2,
+        17,
+        323,
+        334
+      ],
+      "frame": 3,
+      "scale": 0.4930747922437673,
+      "offset": [
+        17,
+        46
+      ],
+      "bounds": [
+        17,
+        46,
+        175,
+        202
+      ]
+    },
+    {
+      "source_crop": [
+        1642,
+        19,
+        1971,
+        364
+      ],
+      "local_bounds": [
+        2,
+        2,
+        328,
+        340
+      ],
+      "frame": 4,
+      "scale": 0.4930747922437673,
+      "offset": [
+        15,
+        35
+      ],
+      "bounds": [
+        15,
+        35,
+        176,
+        202
+      ]
+    },
+    {
+      "source_crop": [
+        116,
+        381,
+        386,
+        737
+      ],
+      "local_bounds": [
+        0,
+        3,
+        268,
+        337
+      ],
+      "frame": 5,
+      "scale": 0.4930747922437673,
+      "offset": [
+        30,
+        37
+      ],
+      "bounds": [
+        30,
+        37,
+        162,
+        202
+      ]
+    },
+    {
+      "source_crop": [
+        549,
+        381,
+        708,
+        737
+      ],
+      "local_bounds": [
+        1,
+        8,
+        157,
+        352
+      ],
+      "frame": 6,
+      "scale": 0.4930747922437673,
+      "offset": [
+        57,
+        32
+      ],
+      "bounds": [
+        57,
+        32,
+        134,
+        202
+      ]
+    },
+    {
+      "source_crop": [
+        889,
+        381,
+        1110,
+        737
+      ],
+      "local_bounds": [
+        2,
+        2,
+        219,
+        354
+      ],
+      "frame": 7,
+      "scale": 0.4930747922437673,
+      "offset": [
+        42,
+        28
+      ],
+      "bounds": [
+        42,
+        28,
+        149,
+        202
+      ]
+    },
+    {
+      "source_crop": [
+        1256,
+        381,
+        1556,
+        737
+      ],
+      "local_bounds": [
+        2,
+        14,
+        298,
+        353
+      ],
+      "frame": 8,
+      "scale": 0.4930747922437673,
+      "offset": [
+        23,
+        35
+      ],
+      "bounds": [
+        23,
+        35,
+        169,
+        202
+      ]
+    },
+    {
+      "source_crop": [
+        1637,
+        381,
+        2002,
+        737
+      ],
+      "local_bounds": [
+        2,
+        16,
+        363,
+        340
+      ],
+      "frame": 9,
+      "scale": 0.4930747922437673,
+      "offset": [
+        7,
+        42
+      ],
+      "bounds": [
+        7,
+        42,
+        185,
+        202
+      ]
+    }
+  ],
+  "alpha_cleanup": {
+    "zero_at_most": 8,
+    "opaque_at_least": 240,
+    "rgb_unchanged_before_resizing": true
+  },
+  "protected_files_unchanged": true,
+  "protected_file_count": 666,
+  "checks": [
+    "RGBA 192x208",
+    "alpha includes 0 and 255",
+    "canvas margins",
+    "positive frame durations",
+    "distinct neighbors",
+    "nonduplicate loop endpoint",
+    "GIF frame counts and exact durations",
+    "protected files SHA-256 unchanged"
+  ],
+  "limitations": [
+    "Technical validation does not establish natural motion or user acceptance.",
+    "Not integrated or tested in desktop application.",
+    "Ten generated key poses, no motion interpolation; stepping and seam need user evaluation."
+  ]
+}

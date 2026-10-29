@@ -609,6 +609,21 @@
         220
       ],
       "loop": false
+    },
+    "dragged": {
+      "frames": [
+        "dragged/00.png",
+        "dragged/01.png",
+        "dragged/02.png",
+        "dragged/03.png"
+      ],
+      "durations_ms": [
+        180,
+        180,
+        160,
+        180
+      ],
+      "loop": true
     }
   },
   "watch_look_directions": [
@@ -645,6 +660,6 @@
       "file": "watch-look/315.png"
     }
   ],
-  "total_frame_count": 144,
+  "total_frame_count": 148,
   "runtime_note": "Sequences are controlled explicitly by application; next metadata is not followed automatically."
 }

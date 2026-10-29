@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "frames": 10,
+  "changed_frames": [
+    6
+  ],
+  "nine_other_pngs_byte_identical_to_v3": true,
+  "protected_file_count": 666,
+  "protected_files_unchanged": true,
+  "cycle_ms": 1150,
+  "frame06_registration": {
+    "source_bounds": [
+      136,
+      125,
+      892,
+      1502
+    ],
+    "scale": 0.12636165577342048,
+    "horizontal_shift": 52,
+    "old_bounds": [
+      52,
+      28,
+      140,
+      202
+    ],
+    "new_bounds": [
+      52,
+      28,
+      148,
+      202
+    ]
+  },
+  "limitations": [
+    "Single-frame imagegen edit may slightly redraw body details.",
+    "Visual approval and transition 05-06-07 still require user review.",
+    "Not integrated or tested in application."
+  ]
+}

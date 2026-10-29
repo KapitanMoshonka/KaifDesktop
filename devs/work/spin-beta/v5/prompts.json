@@ -1,0 +1,9 @@
+{
+  "tool": "built-in imagegen",
+  "revision": 5,
+  "request": "На кадре 06 голова прямо по оси корпуса, взгляд от зрителя; виден затылок.",
+  "prompt": "Use case: precise-object-edit. Edit only the head/upper neck of this existing Kaifik dog sprite, frame06.\nCORRECTED USER DIRECTION: put his head STRAIGHT in line with the rear-facing torso, looking DIRECTLY AWAY FROM THE VIEWER. The viewer must see the BACK OF HIS HEAD, not his face and not a sideways profile. This replaces the previous rightward head turn.\nRender a clean true REAR VIEW OF THE HEAD: two upright triangular ears viewed from BEHIND, red fur on the back of the skull, no visible eye, nose, muzzle, mouth or tongue sticking out to either side. Head points straight into the depth of the image, aligned with the spine/hips. No sideways head tilt, no looking over shoulder, no turning toward the viewer. The neck is naturally attached, same anatomical head size, not stretched, not shrunken. Both ear backs should read naturally, no extra third ear or protruding ear-like lump.\nKEEP the existing REAR-FACING BODY, exact hips, leg/paw pose, curled tail, coat colors/markings, illustration style, body proportions, framing, dog scale and baseline. Do not redesign or rotate the body. Keep the tail attached to the rump and preserve its shape and position. The pose should be the same dog, with only the head now straight and away. His happy expression is simply hidden because the face is facing away; do not invent a visible smile or extra face on the back.\nOne complete adult red Shiba, every ear/paw/tail inside the canvas with margin. Fully transparent RGBA background, opaque fur, clean antialiasing. Remove the dark inspection background, no shadow, text, grid, motion effects, new objects or colored fringe.",
+  "source": "sources/exec-dac1fb2d-c770-4416-ae9f-1a983a3de991.png",
+  "edit_target": "edit-target-06.png",
+  "status": "candidate_pending_user_review"
+}
