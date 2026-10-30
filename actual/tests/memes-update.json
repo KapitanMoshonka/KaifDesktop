@@ -1,0 +1,102 @@
+{
+  "stage_id": "e2ba94c2874042d38b9bb3e73e99c140",
+  "added_count": 11,
+  "preserved_count": 9,
+  "total_count": 20,
+  "old_files_sha256": "unchanged",
+  "old_scales": "unchanged",
+  "new_copies_sha256": "match source",
+  "decode": "PASS",
+  "self_test": "PASS, exit0 from TEMP",
+  "exe": "unchanged",
+  "new_memes": [
+    {
+      "file": "ааааа.jpg",
+      "scale": 1.0,
+      "original_width": 276,
+      "original_height": 268,
+      "scaled_width": 276,
+      "scaled_height": 268
+    },
+    {
+      "file": "алн.jpg",
+      "scale": 0.75,
+      "original_width": 1024,
+      "original_height": 1024,
+      "scaled_width": 768,
+      "scaled_height": 768
+    },
+    {
+      "file": "вспомнил.jpg",
+      "scale": 0.4,
+      "original_width": 1080,
+      "original_height": 1076,
+      "scaled_width": 432,
+      "scaled_height": 430
+    },
+    {
+      "file": "ебитес.jpg",
+      "scale": 0.3,
+      "original_width": 720,
+      "original_height": 717,
+      "scaled_width": 216,
+      "scaled_height": 215
+    },
+    {
+      "file": "зигрв.jpg",
+      "scale": 0.33,
+      "original_width": 718,
+      "original_height": 702,
+      "scaled_width": 236,
+      "scaled_height": 231
+    },
+    {
+      "file": "кайфикс.jpg",
+      "scale": 0.3,
+      "original_width": 1272,
+      "original_height": 1236,
+      "scaled_width": 381,
+      "scaled_height": 370
+    },
+    {
+      "file": "онприкольный.jpg",
+      "scale": 0.2,
+      "original_width": 1200,
+      "original_height": 955,
+      "scaled_width": 240,
+      "scaled_height": 191
+    },
+    {
+      "file": "пздс.jpg",
+      "scale": 1.0,
+      "original_width": 600,
+      "original_height": 304,
+      "scaled_width": 600,
+      "scaled_height": 304
+    },
+    {
+      "file": "повязали.jpg",
+      "scale": 0.3,
+      "original_width": 768,
+      "original_height": 768,
+      "scaled_width": 230,
+      "scaled_height": 230
+    },
+    {
+      "file": "пыкмык.jpg",
+      "scale": 0.7,
+      "original_width": 553,
+      "original_height": 524,
+      "scaled_width": 387,
+      "scaled_height": 366
+    },
+    {
+      "file": "хитры.jpg",
+      "scale": 0.8,
+      "original_width": 736,
+      "original_height": 920,
+      "scaled_width": 588,
+      "scaled_height": 736
+    }
+  ]
+}

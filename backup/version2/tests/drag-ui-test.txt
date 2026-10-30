@@ -1,2 +1,0 @@
-Started: real HWND, native capture and mouse messages; fake cursor, isolated timers.
-PASS: real capture, threshold/click snapshot, pending freezes scheduler, offset/no jump, looping dragged, bounds, release/capture loss/stale up, environment/hide/pause cleanup, paused manual movement, cancellation of sleep/tail/stretch/scratch/watch/petting, queue unchanged, every Cursor and real Meme phase rejects gestures, no activation. Physical mouse movement/routing not performed.

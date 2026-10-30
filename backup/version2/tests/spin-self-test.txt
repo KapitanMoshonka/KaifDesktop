@@ -1,0 +1,1 @@
+PASS: ten frames in manifest order 00..09, durations 150/100/100/100/100/100/150/100/150/100, looping 1150ms, three ordered loops and unchanged TailCycles completion.

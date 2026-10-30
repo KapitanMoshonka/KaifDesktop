@@ -1,0 +1,49 @@
+2026-10-29T23:06:29.9627314+03:00 pid=20572 app.start mode=smoke
+2026-10-29T23:06:30.3515992+03:00 pid=20572 meme.availability available=True; files=9; reason=ready; pool=Sleep,ChaseTail,Stretch,Scratch,Cursor,Watch,Meme
+2026-10-29T23:06:30.3599021+03:00 pid=20572 queue.preview reason=availability; next=ChaseTail,Meme,ChaseTail,ChaseTail,Watch,Meme,Sleep,Stretch,Cursor,Watch,Cursor,Watch
+2026-10-29T23:06:30.4352933+03:00 pid=20572 app.context diagnosticMode=True; automaticProbe=False
+2026-10-29T23:06:37.0459069+03:00 pid=20572 action.start mode=manual; kind=Sleep
+2026-10-29T23:06:37.0459069+03:00 pid=20572 queue.preview reason=manual start; next=ChaseTail,Meme,ChaseTail,ChaseTail,Watch,Meme,Sleep,Stretch,Cursor,Watch,Cursor,Watch
+2026-10-29T23:06:37.0685217+03:00 pid=20572 queue.skip kind=ChaseTail; active=Sleep
+2026-10-29T23:06:37.0733600+03:00 pid=20572 queue.preview reason=skip; next=Meme,ChaseTail,ChaseTail,Watch,Meme,Sleep,Stretch,Cursor,Watch,Cursor,Watch,Sleep
+2026-10-29T23:06:41.9555325+03:00 pid=20572 action.end mode=manual; kind=Sleep; outcome=completed
+2026-10-29T23:06:41.9725152+03:00 pid=20572 action.start mode=manual; kind=ChaseTail
+2026-10-29T23:06:41.9725152+03:00 pid=20572 queue.preview reason=manual start; next=Meme,ChaseTail,ChaseTail,Watch,Meme,Sleep,Stretch,Cursor,Watch,Cursor,Watch,Sleep
+2026-10-29T23:06:45.4270277+03:00 pid=20572 action.end mode=manual; kind=ChaseTail; outcome=completed
+2026-10-29T23:06:45.4638047+03:00 pid=20572 action.start mode=manual; kind=Stretch
+2026-10-29T23:06:45.4638047+03:00 pid=20572 queue.preview reason=manual start; next=Meme,ChaseTail,ChaseTail,Watch,Meme,Sleep,Stretch,Cursor,Watch,Cursor,Watch,Sleep
+2026-10-29T23:06:47.5578063+03:00 pid=20572 action.end mode=manual; kind=Stretch; outcome=completed
+2026-10-29T23:06:47.5780156+03:00 pid=20572 action.start mode=manual; kind=Scratch
+2026-10-29T23:06:47.5812854+03:00 pid=20572 queue.preview reason=manual start; next=Meme,ChaseTail,ChaseTail,Watch,Meme,Sleep,Stretch,Cursor,Watch,Cursor,Watch,Sleep
+2026-10-29T23:06:52.6085743+03:00 pid=20572 action.end mode=manual; kind=Scratch; outcome=completed
+2026-10-29T23:06:52.6406196+03:00 pid=20572 action.start mode=manual; kind=Cursor
+2026-10-29T23:06:52.6445799+03:00 pid=20572 queue.preview reason=manual start; next=Meme,ChaseTail,ChaseTail,Watch,Meme,Sleep,Stretch,Cursor,Watch,Cursor,Watch,Sleep
+2026-10-29T23:06:53.0271052+03:00 pid=20572 action.end mode=manual; kind=Cursor; outcome=cancelled: requested
+2026-10-29T23:06:53.1171327+03:00 pid=20572 action.start mode=manual; kind=Watch
+2026-10-29T23:06:53.1171327+03:00 pid=20572 queue.preview reason=manual start; next=Meme,ChaseTail,ChaseTail,Watch,Meme,Sleep,Stretch,Cursor,Watch,Cursor,Watch,Sleep
+2026-10-29T23:07:15.1707021+03:00 pid=20572 action.end mode=manual; kind=Watch; outcome=completed
+2026-10-29T23:07:15.1767416+03:00 pid=20572 action.start mode=manual; kind=Stretch
+2026-10-29T23:07:15.1767416+03:00 pid=20572 queue.preview reason=manual start; next=Meme,ChaseTail,ChaseTail,Watch,Meme,Sleep,Stretch,Cursor,Watch,Cursor,Watch,Sleep
+2026-10-29T23:07:17.2670518+03:00 pid=20572 action.end mode=manual; kind=Stretch; outcome=completed
+2026-10-29T23:07:17.2768173+03:00 pid=20572 action.start mode=manual; kind=Stretch
+2026-10-29T23:07:17.2774067+03:00 pid=20572 queue.preview reason=manual start; next=Meme,ChaseTail,ChaseTail,Watch,Meme,Sleep,Stretch,Cursor,Watch,Cursor,Watch,Sleep
+2026-10-29T23:07:19.3915592+03:00 pid=20572 action.end mode=manual; kind=Stretch; outcome=completed
+2026-10-29T23:07:19.4343527+03:00 pid=20572 meme.retry manual
+2026-10-29T23:07:19.4343527+03:00 pid=20572 meme.phase leave; file=дачтоты.jpg
+2026-10-29T23:07:19.4343527+03:00 pid=20572 action.start mode=manual; kind=Meme
+2026-10-29T23:07:19.4378036+03:00 pid=20572 queue.preview reason=manual start; next=Meme,ChaseTail,ChaseTail,Watch,Meme,Sleep,Stretch,Cursor,Watch,Cursor,Watch,Sleep
+2026-10-29T23:07:23.5104745+03:00 pid=20572 meme.phase prepare; file=дачтоты.jpg
+2026-10-29T23:07:23.5262159+03:00 pid=20572 meme.phase grab; file=дачтоты.jpg
+2026-10-29T23:07:24.0955916+03:00 pid=20572 meme.phase pull; file=дачтоты.jpg
+2026-10-29T23:07:25.9201517+03:00 pid=20572 meme.phase release; file=дачтоты.jpg
+2026-10-29T23:07:26.5110871+03:00 pid=20572 meme.released outcome=completed; file=дачтоты.jpg
+2026-10-29T23:07:26.5116121+03:00 pid=20572 action.end mode=manual; kind=Meme; outcome=completed
+2026-10-29T23:07:36.5342234+03:00 pid=20572 meme.phase leave; file=зубнаяпаста.jpg
+2026-10-29T23:07:36.5365400+03:00 pid=20572 action.start mode=auto; kind=Meme
+2026-10-29T23:07:36.5365400+03:00 pid=20572 queue.preview reason=auto dequeue; next=ChaseTail,ChaseTail,Watch,Meme,Sleep,Stretch,Cursor,Watch,Cursor,Watch,Sleep,Scratch
+2026-10-29T23:07:37.4633232+03:00 pid=20572 meme.phase prepare; file=зубнаяпаста.jpg
+2026-10-29T23:07:37.4894119+03:00 pid=20572 meme.phase grab; file=зубнаяпаста.jpg
+2026-10-29T23:07:38.0381729+03:00 pid=20572 meme.phase pull; file=зубнаяпаста.jpg
+2026-10-29T23:07:40.7222590+03:00 pid=20572 meme.phase release; file=зубнаяпаста.jpg
+2026-10-29T23:07:41.2858115+03:00 pid=20572 meme.released outcome=completed; file=зубнаяпаста.jpg
+2026-10-29T23:07:41.2858115+03:00 pid=20572 action.end mode=auto; kind=Meme; outcome=completed

@@ -1,0 +1,24 @@
+2026-10-29T23:11:25.4079201+03:00 pid=14452 app.start mode=cursor-setting-test
+2026-10-29T23:11:25.8060234+03:00 pid=14452 meme.availability available=True; files=9; reason=ready; pool=Sleep,ChaseTail,Stretch,Scratch,Cursor,Watch,Meme
+2026-10-29T23:11:25.8060234+03:00 pid=14452 queue.preview reason=availability; next=Watch,Scratch,Scratch,Cursor,Stretch,Scratch,Cursor,Meme,Stretch,Sleep,ChaseTail,Cursor
+2026-10-29T23:11:25.8866253+03:00 pid=14452 app.context diagnosticMode=False; automaticProbe=False
+2026-10-29T23:11:25.9586909+03:00 pid=14452 cursor.enabled=False
+2026-10-29T23:11:25.9586909+03:00 pid=14452 queue.preview reason=cursor setting; next=Watch,Scratch,Scratch,Stretch,Scratch,Meme,Stretch,Sleep,ChaseTail,ChaseTail,Sleep,Scratch
+2026-10-29T23:11:25.9965346+03:00 pid=14452 action.start mode=manual; kind=ChaseTail
+2026-10-29T23:11:25.9965346+03:00 pid=14452 queue.preview reason=manual start; next=Watch,Scratch,Scratch,Stretch,Scratch,Meme,Stretch,Sleep,ChaseTail,ChaseTail,Sleep,Scratch
+2026-10-29T23:11:26.0035590+03:00 pid=14452 cursor.enabled=True
+2026-10-29T23:11:26.0035590+03:00 pid=14452 queue.preview reason=cursor setting; next=Stretch,Cursor,Stretch,Stretch,Sleep,Sleep,ChaseTail,Sleep,Stretch,ChaseTail,Cursor,ChaseTail
+2026-10-29T23:11:26.0200024+03:00 pid=14452 cursor.enabled=False
+2026-10-29T23:11:26.0218248+03:00 pid=14452 queue.preview reason=cursor setting; next=Stretch,Stretch,Sleep,Sleep,ChaseTail,Sleep,Stretch,ChaseTail,ChaseTail,Sleep,Scratch,ChaseTail
+2026-10-29T23:11:29.4114187+03:00 pid=14452 action.end mode=manual; kind=ChaseTail; outcome=completed
+2026-10-29T23:11:29.4338605+03:00 pid=14452 cursor.enabled=True
+2026-10-29T23:11:29.4338605+03:00 pid=14452 queue.preview reason=cursor setting; next=Meme,Cursor,ChaseTail,Meme,Watch,Watch,Stretch,Cursor,Stretch,Stretch,Watch,Scratch
+2026-10-29T23:11:29.4520741+03:00 pid=14452 action.start mode=manual; kind=Cursor
+2026-10-29T23:11:29.4520741+03:00 pid=14452 queue.preview reason=manual start; next=Meme,Cursor,ChaseTail,Meme,Watch,Watch,Stretch,Cursor,Stretch,Stretch,Watch,Scratch
+2026-10-29T23:11:29.8362418+03:00 pid=14452 action.end mode=manual; kind=Cursor; outcome=cancelled: requested
+2026-10-29T23:11:29.8362418+03:00 pid=14452 cursor.enabled=False
+2026-10-29T23:11:29.8428238+03:00 pid=14452 queue.preview reason=cursor setting; next=Meme,ChaseTail,Meme,Watch,Watch,Stretch,Stretch,Watch,Scratch,ChaseTail,Sleep,Scratch
+2026-10-29T23:11:30.1773686+03:00 pid=14452 cursor.enabled=True
+2026-10-29T23:11:30.1773686+03:00 pid=14452 queue.preview reason=cursor setting; next=Cursor,ChaseTail,Meme,Watch,Cursor,ChaseTail,Scratch,ChaseTail,Stretch,Scratch,Cursor,Stretch
+2026-10-29T23:11:30.1947928+03:00 pid=14452 cursor.enabled=False
+2026-10-29T23:11:30.1947928+03:00 pid=14452 queue.preview reason=cursor setting; next=ChaseTail,Meme,Watch,ChaseTail,Scratch,ChaseTail,Stretch,Scratch,Stretch,Sleep,ChaseTail,Watch

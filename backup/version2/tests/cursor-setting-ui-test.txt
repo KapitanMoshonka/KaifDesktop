@@ -1,0 +1,2 @@
+Started: real checkbox HWND/BM_CLICK, UI timer and layered spin rendering. Fake cursor; isolated settings.
+PASS: exact checkbox/Крутись labels; native BM_CLICK synchronizes checked/controller/button/12-item queue and persists true/false; disabled direct start denied; active non-Cursor spin unaffected; all 10 frames rendered over 3 cycles; re-enable starts fake capture; disabling releases attachment without snap or stale writes. Real user cursor never moved. Physical mouse input and artistic acceptance remain manual.

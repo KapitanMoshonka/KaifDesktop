@@ -1,0 +1,5 @@
+Started: real checkbox HWND/BM_CLICK, UI timer and layered spin rendering. Fake cursor; isolated settings.
+FAIL: System.Exception: Native checkbox and controller stay synchronized
+   в KaifDesktop.CursorSettingUiTest.ClickToggle(Boolean expected) в C:\Users\Maksim\Documents\Codex\KaifDesktop\devs\src\KaifDesktop\CursorSettingUiTest.cs:строка 31
+   в KaifDesktop.CursorSettingUiTest.Update(Double time) в C:\Users\Maksim\Documents\Codex\KaifDesktop\devs\src\KaifDesktop\CursorSettingUiTest.cs:строка 54
+   в KaifDesktop.PetApplicationContext.Tick(Object sender, EventArgs args) в C:\Users\Maksim\Documents\Codex\KaifDesktop\devs\src\KaifDesktop\PetApplicationContext.cs:строка 194

@@ -30,3 +30,132 @@
 2026-10-29T23:16:02.4050072+03:00 pid=16188 action.start mode=manual; kind=ChaseTail
 2026-10-29T23:16:02.4050072+03:00 pid=16188 queue.preview reason=manual start; next=Meme,Stretch,Meme,Sleep,Sleep,Meme,Cursor,Meme,Meme,Scratch,Cursor,Scratch
 2026-10-29T23:16:05.8648968+03:00 pid=16188 action.end mode=manual; kind=ChaseTail; outcome=completed
+2026-10-29T23:41:47.7478301+03:00 pid=10572 app.start mode=normal
+2026-10-29T23:41:48.1134776+03:00 pid=10572 meme.availability available=True; files=9; reason=ready; pool=Sleep,ChaseTail,Stretch,Scratch,Cursor,Watch,Meme
+2026-10-29T23:41:48.1134776+03:00 pid=10572 queue.preview reason=availability; next=Stretch,Scratch,ChaseTail,Cursor,Sleep,Scratch,Sleep,Watch,Cursor,Scratch,ChaseTail,Stretch
+2026-10-29T23:41:48.2014364+03:00 pid=10572 app.context diagnosticMode=False; automaticProbe=False
+2026-10-29T23:41:55.4465101+03:00 pid=10572 petting.start mode=manual
+2026-10-29T23:41:56.3877463+03:00 pid=10572 petting.end outcome=completed
+2026-10-29T23:41:56.7982981+03:00 pid=10572 petting.start mode=manual
+2026-10-29T23:41:57.7400164+03:00 pid=10572 petting.end outcome=completed
+2026-10-29T23:41:59.0957381+03:00 pid=10572 petting.start mode=manual
+2026-10-29T23:42:00.0432167+03:00 pid=10572 petting.end outcome=completed
+2026-10-29T23:56:07.9079410+03:00 pid=32968 app.start mode=normal
+2026-10-29T23:56:08.4466059+03:00 pid=32968 meme.availability available=True; files=20; reason=ready; pool=Sleep,ChaseTail,Stretch,Scratch,Cursor,Watch,Meme
+2026-10-29T23:56:08.4466059+03:00 pid=32968 queue.preview reason=availability; next=Stretch,Watch,Scratch,Sleep,Meme,ChaseTail,Meme,Stretch,Cursor,Sleep,ChaseTail,Cursor
+2026-10-29T23:56:08.5442886+03:00 pid=32968 app.context diagnosticMode=False; automaticProbe=False
+2026-10-29T23:56:14.3141896+03:00 pid=32968 meme.retry manual
+2026-10-29T23:56:14.3192155+03:00 pid=32968 meme.phase leave; file=зигрв.jpg
+2026-10-29T23:56:14.3223958+03:00 pid=32968 action.start mode=manual; kind=Meme
+2026-10-29T23:56:14.3223958+03:00 pid=32968 queue.preview reason=manual start; next=Stretch,Watch,Scratch,Sleep,Meme,ChaseTail,Meme,Stretch,Cursor,Sleep,ChaseTail,Cursor
+2026-10-29T23:56:18.3495766+03:00 pid=32968 meme.phase prepare; file=зигрв.jpg
+2026-10-29T23:56:18.4124932+03:00 pid=32968 meme.phase grab; file=зигрв.jpg
+2026-10-29T23:56:18.9841557+03:00 pid=32968 meme.phase pull; file=зигрв.jpg
+2026-10-29T23:56:20.9066654+03:00 pid=32968 meme.phase release; file=зигрв.jpg
+2026-10-29T23:56:21.5144256+03:00 pid=32968 meme.released outcome=completed; file=зигрв.jpg
+2026-10-29T23:56:21.5167322+03:00 pid=32968 action.end mode=manual; kind=Meme; outcome=completed
+2026-10-29T23:56:23.3173492+03:00 pid=32968 meme.retry manual
+2026-10-29T23:56:23.3185597+03:00 pid=32968 meme.phase leave; file=пздс.jpg
+2026-10-29T23:56:23.3190997+03:00 pid=32968 action.start mode=manual; kind=Meme
+2026-10-29T23:56:23.3197353+03:00 pid=32968 queue.preview reason=manual start; next=Stretch,Watch,Scratch,Sleep,Meme,ChaseTail,Meme,Stretch,Cursor,Sleep,ChaseTail,Cursor
+2026-10-29T23:56:24.5135264+03:00 pid=32968 meme.phase prepare; file=пздс.jpg
+2026-10-29T23:56:24.6001665+03:00 pid=32968 meme.phase grab; file=пздс.jpg
+2026-10-29T23:56:25.2018093+03:00 pid=32968 meme.phase pull; file=пздс.jpg
+2026-10-29T23:56:29.3921430+03:00 pid=32968 meme.phase release; file=пздс.jpg
+2026-10-29T23:56:29.9985066+03:00 pid=32968 meme.released outcome=completed; file=пздс.jpg
+2026-10-29T23:56:29.9999794+03:00 pid=32968 action.end mode=manual; kind=Meme; outcome=completed
+2026-10-29T23:56:36.6867569+03:00 pid=32968 drag.start from=calm
+2026-10-29T23:56:37.4156686+03:00 pid=32968 drag.end
+2026-10-29T23:56:43.8603523+03:00 pid=32968 queue.skip kind=Stretch; active=
+2026-10-29T23:56:43.8603523+03:00 pid=32968 queue.preview reason=skip; next=Watch,Scratch,Sleep,Meme,ChaseTail,Meme,Stretch,Cursor,Sleep,ChaseTail,Cursor,Sleep
+2026-10-29T23:56:47.4460929+03:00 pid=32968 action.start mode=auto; kind=Watch
+2026-10-29T23:56:47.4460929+03:00 pid=32968 queue.preview reason=auto dequeue; next=Scratch,Sleep,Meme,ChaseTail,Meme,Stretch,Cursor,Sleep,ChaseTail,Cursor,Sleep,Cursor
+2026-10-29T23:56:54.5006722+03:00 pid=32968 queue.skip kind=Scratch; active=Watch
+2026-10-29T23:56:54.5035411+03:00 pid=32968 queue.preview reason=skip; next=Sleep,Meme,ChaseTail,Meme,Stretch,Cursor,Sleep,ChaseTail,Cursor,Sleep,Cursor,Cursor
+2026-10-29T23:56:57.7234191+03:00 pid=32968 action.end mode=auto; kind=Watch; outcome=cancelled: drag started
+2026-10-29T23:56:57.7234191+03:00 pid=32968 drag.start from=Watch
+2026-10-29T23:56:58.1291262+03:00 pid=32968 drag.end
+2026-10-29T23:57:04.7846168+03:00 pid=32968 action.start mode=manual; kind=Cursor
+2026-10-29T23:57:04.7846168+03:00 pid=32968 queue.preview reason=manual start; next=Sleep,Meme,ChaseTail,Meme,Stretch,Cursor,Sleep,ChaseTail,Cursor,Sleep,Cursor,Cursor
+2026-10-29T23:57:19.7765837+03:00 pid=32968 action.end mode=manual; kind=Cursor; outcome=completed
+2026-10-29T23:57:33.6883100+03:00 pid=7796 app.start mode=normal
+2026-10-29T23:57:34.2292191+03:00 pid=7796 meme.availability available=True; files=20; reason=ready; pool=Sleep,ChaseTail,Stretch,Scratch,Cursor,Watch,Meme
+2026-10-29T23:57:34.2298311+03:00 pid=7796 queue.preview reason=availability; next=Stretch,Stretch,Watch,Watch,Cursor,Meme,Watch,Watch,Stretch,Stretch,Meme,Meme
+2026-10-29T23:57:34.3199090+03:00 pid=7796 app.context diagnosticMode=False; automaticProbe=False
+2026-10-29T23:57:35.5463467+03:00 pid=7796 petting.start mode=manual
+2026-10-29T23:57:36.5168767+03:00 pid=7796 petting.end outcome=completed
+2026-10-29T23:57:36.7399655+03:00 pid=7796 petting.start mode=manual
+2026-10-29T23:57:37.9293042+03:00 pid=7796 petting.end outcome=completed
+2026-10-29T23:57:38.7491791+03:00 pid=7796 petting.start mode=manual
+2026-10-29T23:57:39.7030751+03:00 pid=7796 petting.end outcome=completed
+2026-10-30T09:27:45.0956236+03:00 pid=32176 app.start mode=normal
+2026-10-30T09:27:46.0241672+03:00 pid=32176 meme.availability available=True; files=20; reason=ready; pool=Sleep,ChaseTail,Stretch,Scratch,Cursor,Watch,Meme
+2026-10-30T09:27:46.0252717+03:00 pid=32176 queue.preview reason=availability; next=Sleep,Scratch,Meme,Meme,ChaseTail,Stretch,Cursor,Cursor,Sleep,Sleep,ChaseTail,Sleep
+2026-10-30T09:27:46.2424394+03:00 pid=32176 app.context diagnosticMode=False; automaticProbe=False
+2026-10-30T09:27:48.5881080+03:00 pid=32176 drag.start from=calm
+2026-10-30T09:27:49.5111145+03:00 pid=32176 drag.end
+2026-10-30T09:27:55.1747142+03:00 pid=32176 meme.retry manual
+2026-10-30T09:27:55.1829571+03:00 pid=32176 meme.phase leave; file=зигрв.jpg
+2026-10-30T09:27:55.1829571+03:00 pid=32176 action.start mode=manual; kind=Meme
+2026-10-30T09:27:55.1829571+03:00 pid=32176 queue.preview reason=manual start; next=Sleep,Scratch,Meme,Meme,ChaseTail,Stretch,Cursor,Cursor,Sleep,Sleep,ChaseTail,Sleep
+2026-10-30T09:27:57.7687241+03:00 pid=32176 meme.phase prepare; file=зигрв.jpg
+2026-10-30T09:27:57.7886078+03:00 pid=32176 meme.phase grab; file=зигрв.jpg
+2026-10-30T09:27:58.3530246+03:00 pid=32176 meme.phase pull; file=зигрв.jpg
+2026-10-30T09:28:00.2468108+03:00 pid=32176 meme.phase release; file=зигрв.jpg
+2026-10-30T09:28:00.8503678+03:00 pid=32176 meme.released outcome=completed; file=зигрв.jpg
+2026-10-30T09:28:00.8503678+03:00 pid=32176 action.end mode=manual; kind=Meme; outcome=completed
+2026-10-30T09:28:02.9208950+03:00 pid=32176 drag.start from=calm
+2026-10-30T09:28:03.4206039+03:00 pid=32176 drag.end
+2026-10-30T09:28:13.4040934+03:00 pid=32176 action.start mode=auto; kind=Sleep
+2026-10-30T09:28:13.4040934+03:00 pid=32176 queue.preview reason=auto dequeue; next=Scratch,Meme,Meme,ChaseTail,Stretch,Cursor,Cursor,Sleep,Sleep,ChaseTail,Sleep,Sleep
+2026-10-30T09:28:36.9230673+03:00 pid=32176 action.end mode=auto; kind=Sleep; outcome=completed
+2026-10-30T09:28:37.9289453+03:00 pid=32176 meme.retry manual
+2026-10-30T09:28:37.9289453+03:00 pid=32176 meme.phase leave; file=охчорткакжеякрут.jpg
+2026-10-30T09:28:37.9289453+03:00 pid=32176 action.start mode=manual; kind=Meme
+2026-10-30T09:28:37.9289453+03:00 pid=32176 queue.preview reason=manual start; next=Scratch,Meme,Meme,ChaseTail,Stretch,Cursor,Cursor,Sleep,Sleep,ChaseTail,Sleep,Sleep
+2026-10-30T09:28:39.9278372+03:00 pid=32176 meme.phase prepare; file=охчорткакжеякрут.jpg
+2026-10-30T09:28:39.9703873+03:00 pid=32176 meme.phase grab; file=охчорткакжеякрут.jpg
+2026-10-30T09:28:40.5542742+03:00 pid=32176 meme.phase pull; file=охчорткакжеякрут.jpg
+2026-10-30T09:28:44.4466817+03:00 pid=32176 meme.phase release; file=охчорткакжеякрут.jpg
+2026-10-30T09:28:45.0465976+03:00 pid=32176 meme.released outcome=completed; file=охчорткакжеякрут.jpg
+2026-10-30T09:28:45.0465976+03:00 pid=32176 action.end mode=manual; kind=Meme; outcome=completed
+2026-10-30T09:28:47.4243370+03:00 pid=32176 drag.start from=calm
+2026-10-30T09:28:48.0665704+03:00 pid=32176 drag.end
+2026-10-30T09:28:49.4985003+03:00 pid=32176 meme.retry manual
+2026-10-30T09:28:49.4985003+03:00 pid=32176 meme.phase leave; file=кайфикс.jpg
+2026-10-30T09:28:49.4985003+03:00 pid=32176 action.start mode=manual; kind=Meme
+2026-10-30T09:28:49.4985003+03:00 pid=32176 queue.preview reason=manual start; next=Scratch,Meme,Meme,ChaseTail,Stretch,Cursor,Cursor,Sleep,Sleep,ChaseTail,Sleep,Sleep
+2026-10-30T09:28:51.9467414+03:00 pid=32176 meme.phase prepare; file=кайфикс.jpg
+2026-10-30T09:28:51.9579549+03:00 pid=32176 meme.phase grab; file=кайфикс.jpg
+2026-10-30T09:28:52.5615560+03:00 pid=32176 meme.phase pull; file=кайфикс.jpg
+2026-10-30T09:28:55.3746278+03:00 pid=32176 meme.phase release; file=кайфикс.jpg
+2026-10-30T09:28:55.9501771+03:00 pid=32176 meme.released outcome=completed; file=кайфикс.jpg
+2026-10-30T09:28:55.9501771+03:00 pid=32176 action.end mode=manual; kind=Meme; outcome=completed
+2026-10-30T09:29:00.0664205+03:00 pid=32176 petting.start mode=manual
+2026-10-30T09:29:01.3830169+03:00 pid=32176 petting.end outcome=completed
+2026-10-30T09:29:11.0449173+03:00 pid=32176 action.start mode=auto; kind=Scratch
+2026-10-30T09:29:11.0449173+03:00 pid=32176 queue.preview reason=auto dequeue; next=Meme,Meme,ChaseTail,Stretch,Cursor,Cursor,Sleep,Sleep,ChaseTail,Sleep,Sleep,ChaseTail
+2026-10-30T09:29:16.0155840+03:00 pid=32176 action.end mode=auto; kind=Scratch; outcome=completed
+2026-10-30T09:29:26.0122483+03:00 pid=32176 meme.phase leave; file=онприкольный.jpg
+2026-10-30T09:29:26.0122483+03:00 pid=32176 action.start mode=auto; kind=Meme
+2026-10-30T09:29:26.0122483+03:00 pid=32176 queue.preview reason=auto dequeue; next=Meme,ChaseTail,Stretch,Cursor,Cursor,Sleep,Sleep,ChaseTail,Sleep,Sleep,ChaseTail,Cursor
+2026-10-30T09:29:27.6309175+03:00 pid=32176 meme.phase prepare; file=онприкольный.jpg
+2026-10-30T09:29:27.6390356+03:00 pid=32176 meme.phase grab; file=онприкольный.jpg
+2026-10-30T09:29:28.2252545+03:00 pid=32176 meme.phase pull; file=онприкольный.jpg
+2026-10-30T09:29:30.1530220+03:00 pid=32176 meme.phase release; file=онприкольный.jpg
+2026-10-30T09:29:30.7599106+03:00 pid=32176 meme.released outcome=completed; file=онприкольный.jpg
+2026-10-30T09:29:30.7599106+03:00 pid=32176 action.end mode=auto; kind=Meme; outcome=completed
+2026-10-30T09:29:34.4270191+03:00 pid=32176 drag.start from=calm
+2026-10-30T09:29:34.8064778+03:00 pid=32176 drag.end
+2026-10-30T09:29:39.2737692+03:00 pid=32176 action.start mode=manual; kind=ChaseTail
+2026-10-30T09:29:39.2737692+03:00 pid=32176 queue.preview reason=manual start; next=Meme,ChaseTail,Stretch,Cursor,Cursor,Sleep,Sleep,ChaseTail,Sleep,Sleep,ChaseTail,Cursor
+2026-10-30T09:29:42.7287003+03:00 pid=32176 action.end mode=manual; kind=ChaseTail; outcome=completed
+2026-10-30T09:29:52.7023434+03:00 pid=32176 meme.phase leave; file=сметанник.jpg
+2026-10-30T09:29:52.7023434+03:00 pid=32176 action.start mode=auto; kind=Meme
+2026-10-30T09:29:52.7047523+03:00 pid=32176 queue.preview reason=auto dequeue; next=ChaseTail,Stretch,Cursor,Cursor,Sleep,Sleep,ChaseTail,Sleep,Sleep,ChaseTail,Cursor,Cursor
+2026-10-30T09:29:54.2937996+03:00 pid=32176 meme.phase prepare; file=сметанник.jpg
+2026-10-30T09:29:54.3554248+03:00 pid=32176 meme.phase grab; file=сметанник.jpg
+2026-10-30T09:29:54.9531313+03:00 pid=32176 meme.phase pull; file=сметанник.jpg
+2026-10-30T09:29:58.7245353+03:00 pid=32176 meme.phase release; file=сметанник.jpg
+2026-10-30T09:29:59.3009044+03:00 pid=32176 meme.released outcome=completed; file=сметанник.jpg
+2026-10-30T09:29:59.3045445+03:00 pid=32176 action.end mode=auto; kind=Meme; outcome=completed

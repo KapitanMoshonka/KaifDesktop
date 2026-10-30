@@ -1,0 +1,4 @@
+Initial native checkbox test incorrectly relied on BM_GETCHECK for a WinForms managed/painted Checked state. Product events and saved settings were correct; assertion changed to the actual managed/controller state after native BM_CLICK.
+Initial smoke resource comparison ran with an intentionally retained automatic meme image window still open. Final smoke now disposes owned diagnostic image windows before comparison; original GDI/USER limits are unchanged.
+Both initial failures are retained as diagnostic history, not successful test claims. Final results are separate.
+No real user cursor movement. No ordinary application launch. No Approve/commit/push.

@@ -1,0 +1,1 @@
+PASS: default/legacy JSON true, explicit false, disk persistence, disabled startup/manual start, all waiting Cursor removed with retained tail/refill, non-Cursor progress/Watch/petting/drag unchanged, active attachment released without snap, re-enable, history/max-two through 5000 toggles. Fake cursor only.
